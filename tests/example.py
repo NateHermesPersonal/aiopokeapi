@@ -28,9 +28,8 @@ async def main():
         while not finished:
             try:
                 generation = await client.get_generation(gen)
-                print(f"{generation.version_groups}")
-                print(f"{generation.main_region}")
-                print(f"{generation.name}")
+                # print(f"{generation.version_groups}")
+                # print(f"{generation.main_region}")
                 new = len(generation.pokemon_species)
                 for ability in generation.abilities:
                     abilities.append(ability.name)
