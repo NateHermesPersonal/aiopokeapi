@@ -1,0 +1,937 @@
+pound
+karate-chop
+double-slap
+comet-punch
+mega-punch
+pay-day
+fire-punch
+ice-punch
+thunder-punch
+scratch
+vice-grip
+guillotine
+Issue when calling get_move on move razor-wind
+Issue when calling get_move on move swords-dance
+cut
+gust
+Issue when calling get_move on move wing-attack
+Issue when calling get_move on move whirlwind
+Issue when calling get_move on move fly
+Issue when calling get_move on move bind
+slam
+Issue when calling get_move on move vine-whip
+stomp
+double-kick
+mega-kick
+Issue when calling get_move on move jump-kick
+rolling-kick
+sand-attack
+headbutt
+horn-attack
+fury-attack
+horn-drill
+Issue when calling get_move on move tackle
+body-slam
+Issue when calling get_move on move wrap
+take-down
+Issue when calling get_move on move thrash
+Issue when calling get_move on move double-edge
+tail-whip
+Issue when calling get_move on move poison-sting
+twineedle
+Issue when calling get_move on move pin-missile
+leer
+bite
+growl
+Issue when calling get_move on move roar
+sing
+supersonic
+sonic-boom
+Issue when calling get_move on move disable
+acid
+ember
+Issue when calling get_move on move flamethrower
+mist
+water-gun
+Issue when calling get_move on move hydro-pump
+Issue when calling get_move on move surf
+Issue when calling get_move on move ice-beam
+Issue when calling get_move on move blizzard
+psybeam
+bubble-beam
+aurora-beam
+hyper-beam
+peck
+drill-peck
+Issue when calling get_move on move submission
+Issue when calling get_move on move low-kick
+counter
+seismic-toss
+strength
+Issue when calling get_move on move absorb
+Issue when calling get_move on move mega-drain
+leech-seed
+Issue when calling get_move on move growth
+razor-leaf
+Issue when calling get_move on move solar-beam
+poison-powder
+stun-spore
+sleep-powder
+Issue when calling get_move on move petal-dance
+Issue when calling get_move on move string-shot
+dragon-rage
+Issue when calling get_move on move fire-spin
+thunder-shock
+Issue when calling get_move on move thunderbolt
+Issue when calling get_move on move thunder-wave
+Issue when calling get_move on move thunder
+Issue when calling get_move on move rock-throw
+earthquake
+fissure
+Issue when calling get_move on move dig
+Issue when calling get_move on move toxic
+confusion
+Issue when calling get_move on move psychic
+Issue when calling get_move on move hypnosis
+meditate
+agility
+quick-attack
+rage
+Issue when calling get_move on move teleport
+night-shade
+mimic
+screech
+double-team
+Issue when calling get_move on move recover
+harden
+Issue when calling get_move on move minimize
+smokescreen
+confuse-ray
+withdraw
+defense-curl
+Issue when calling get_move on move barrier
+light-screen
+haze
+reflect
+focus-energy
+bide
+metronome
+mirror-move
+Issue when calling get_move on move self-destruct
+egg-bomb
+Issue when calling get_move on move lick
+Issue when calling get_move on move smog
+sludge
+bone-club
+Issue when calling get_move on move fire-blast
+waterfall
+Issue when calling get_move on move clamp
+swift
+Issue when calling get_move on move skull-bash
+spike-cannon
+constrict
+amnesia
+kinesis
+soft-boiled
+Issue when calling get_move on move high-jump-kick
+Issue when calling get_move on move glare
+dream-eater
+Issue when calling get_move on move poison-gas
+barrage
+Issue when calling get_move on move leech-life
+lovely-kiss
+Issue when calling get_move on move sky-attack
+transform
+Issue when calling get_move on move bubble
+Issue when calling get_move on move dizzy-punch
+spore
+Issue when calling get_move on move flash
+Issue when calling get_move on move psywave
+splash
+Issue when calling get_move on move acid-armor
+Issue when calling get_move on move crabhammer
+Issue when calling get_move on move explosion
+fury-swipes
+bonemerang
+rest
+Issue when calling get_move on move rock-slide
+hyper-fang
+sharpen
+conversion
+Issue when calling get_move on move tri-attack
+super-fang
+slash
+substitute
+Issue when calling get_move on move struggle
+sketch
+triple-kick
+Issue when calling get_move on move thief
+spider-web
+Issue when calling get_move on move mind-reader
+nightmare
+flame-wheel
+Issue when calling get_move on move snore
+curse
+flail
+conversion-2
+aeroblast
+Issue when calling get_move on move cotton-spore
+reversal
+spite
+powder-snow
+protect
+mach-punch
+Issue when calling get_move on move scary-face
+feint-attack
+sweet-kiss
+belly-drum
+sludge-bomb
+mud-slap
+octazooka
+spikes
+Issue when calling get_move on move zap-cannon
+foresight
+destiny-bond
+Issue when calling get_move on move perish-song
+icy-wind
+detect
+Issue when calling get_move on move bone-rush
+lock-on
+Issue when calling get_move on move outrage
+sandstorm
+Issue when calling get_move on move giga-drain
+endure
+charm
+rollout
+false-swipe
+Issue when calling get_move on move swagger
+milk-drink
+spark
+Issue when calling get_move on move fury-cutter
+steel-wing
+mean-look
+attract
+sleep-talk
+Issue when calling get_move on move heal-bell
+return
+present
+frustration
+safeguard
+pain-split
+sacred-fire
+magnitude
+dynamic-punch
+megahorn
+dragon-breath
+baton-pass
+encore
+pursuit
+Issue when calling get_move on move rapid-spin
+sweet-scent
+iron-tail
+metal-claw
+vital-throw
+morning-sun
+synthesis
+moonlight
+Issue when calling get_move on move hidden-power
+cross-chop
+twister
+rain-dance
+sunny-day
+crunch
+mirror-coat
+psych-up
+extreme-speed
+ancient-power
+shadow-ball
+Issue when calling get_move on move future-sight
+Issue when calling get_move on move rock-smash
+Issue when calling get_move on move whirlpool
+Issue when calling get_move on move beat-up
+fake-out
+Issue when calling get_move on move uproar
+Issue when calling get_move on move stockpile
+spit-up
+swallow
+Issue when calling get_move on move heat-wave
+hail
+torment
+flatter
+Issue when calling get_move on move will-o-wisp
+memento
+facade
+focus-punch
+Issue when calling get_move on move smelling-salts
+Issue when calling get_move on move follow-me
+Issue when calling get_move on move nature-power
+charge
+taunt
+helping-hand
+trick
+role-play
+wish
+assist
+ingrain
+superpower
+magic-coat
+recycle
+revenge
+brick-break
+yawn
+Issue when calling get_move on move knock-off
+endeavor
+eruption
+skill-swap
+imprison
+refresh
+grudge
+snatch
+secret-power
+Issue when calling get_move on move dive
+arm-thrust
+camouflage
+Issue when calling get_move on move tail-glow
+luster-purge
+mist-ball
+feather-dance
+teeter-dance
+blaze-kick
+mud-sport
+ice-ball
+needle-arm
+slack-off
+hyper-voice
+Issue when calling get_move on move poison-fang
+crush-claw
+blast-burn
+hydro-cannon
+Issue when calling get_move on move meteor-mash
+astonish
+weather-ball
+Issue when calling get_move on move aromatherapy
+fake-tears
+Issue when calling get_move on move air-cutter
+Issue when calling get_move on move overheat
+odor-sleuth
+Issue when calling get_move on move rock-tomb
+silver-wind
+metal-sound
+grass-whistle
+tickle
+cosmic-power
+water-spout
+signal-beam
+shadow-punch
+Issue when calling get_move on move extrasensory
+sky-uppercut
+Issue when calling get_move on move sand-tomb
+sheer-cold
+Issue when calling get_move on move muddy-water
+Issue when calling get_move on move bullet-seed
+aerial-ace
+Issue when calling get_move on move icicle-spear
+iron-defense
+block
+Issue when calling get_move on move howl
+dragon-claw
+frenzy-plant
+bulk-up
+bounce
+mud-shot
+poison-tail
+Issue when calling get_move on move covet
+volt-tackle
+magical-leaf
+water-sport
+calm-mind
+Issue when calling get_move on move leaf-blade
+dragon-dance
+Issue when calling get_move on move rock-blast
+shock-wave
+water-pulse
+Issue when calling get_move on move doom-desire
+psycho-boost
+Issue when calling get_move on move shadow-rush
+Issue when calling get_move on move shadow-blast
+Issue when calling get_move on move shadow-blitz
+Issue when calling get_move on move shadow-bolt
+Issue when calling get_move on move shadow-break
+Issue when calling get_move on move shadow-chill
+Issue when calling get_move on move shadow-end
+Issue when calling get_move on move shadow-fire
+Issue when calling get_move on move shadow-rave
+Issue when calling get_move on move shadow-storm
+Issue when calling get_move on move shadow-wave
+Issue when calling get_move on move shadow-down
+Issue when calling get_move on move shadow-half
+Issue when calling get_move on move shadow-hold
+Issue when calling get_move on move shadow-mist
+Issue when calling get_move on move shadow-panic
+Issue when calling get_move on move shadow-shed
+Issue when calling get_move on move shadow-sky
+Issue when calling get_move on move roost
+Issue when calling get_move on move gravity
+Issue when calling get_move on move miracle-eye
+Issue when calling get_move on move wake-up-slap
+Issue when calling get_move on move hammer-arm
+Issue when calling get_move on move gyro-ball
+Issue when calling get_move on move healing-wish
+Issue when calling get_move on move brine
+Issue when calling get_move on move natural-gift
+Issue when calling get_move on move feint
+Issue when calling get_move on move pluck
+Issue when calling get_move on move tailwind
+Issue when calling get_move on move acupressure
+Issue when calling get_move on move metal-burst
+Issue when calling get_move on move u-turn
+Issue when calling get_move on move close-combat
+Issue when calling get_move on move payback
+Issue when calling get_move on move assurance
+Issue when calling get_move on move embargo
+Issue when calling get_move on move fling
+Issue when calling get_move on move psycho-shift
+Issue when calling get_move on move trump-card
+Issue when calling get_move on move heal-block
+Issue when calling get_move on move wring-out
+Issue when calling get_move on move power-trick
+Issue when calling get_move on move gastro-acid
+Issue when calling get_move on move lucky-chant
+Issue when calling get_move on move me-first
+Issue when calling get_move on move copycat
+Issue when calling get_move on move power-swap
+Issue when calling get_move on move guard-swap
+Issue when calling get_move on move punishment
+Issue when calling get_move on move last-resort
+Issue when calling get_move on move worry-seed
+Issue when calling get_move on move sucker-punch
+Issue when calling get_move on move toxic-spikes
+Issue when calling get_move on move heart-swap
+Issue when calling get_move on move aqua-ring
+Issue when calling get_move on move magnet-rise
+Issue when calling get_move on move flare-blitz
+Issue when calling get_move on move force-palm
+Issue when calling get_move on move aura-sphere
+Issue when calling get_move on move rock-polish
+Issue when calling get_move on move poison-jab
+Issue when calling get_move on move dark-pulse
+Issue when calling get_move on move night-slash
+Issue when calling get_move on move aqua-tail
+Issue when calling get_move on move seed-bomb
+Issue when calling get_move on move air-slash
+Issue when calling get_move on move x-scissor
+Issue when calling get_move on move bug-buzz
+Issue when calling get_move on move dragon-pulse
+Issue when calling get_move on move dragon-rush
+Issue when calling get_move on move power-gem
+Issue when calling get_move on move drain-punch
+Issue when calling get_move on move vacuum-wave
+Issue when calling get_move on move focus-blast
+Issue when calling get_move on move energy-ball
+Issue when calling get_move on move brave-bird
+Issue when calling get_move on move earth-power
+Issue when calling get_move on move switcheroo
+Issue when calling get_move on move giga-impact
+Issue when calling get_move on move nasty-plot
+Issue when calling get_move on move bullet-punch
+Issue when calling get_move on move avalanche
+Issue when calling get_move on move ice-shard
+Issue when calling get_move on move shadow-claw
+Issue when calling get_move on move thunder-fang
+Issue when calling get_move on move ice-fang
+Issue when calling get_move on move fire-fang
+Issue when calling get_move on move shadow-sneak
+Issue when calling get_move on move mud-bomb
+Issue when calling get_move on move psycho-cut
+Issue when calling get_move on move zen-headbutt
+Issue when calling get_move on move mirror-shot
+Issue when calling get_move on move flash-cannon
+Issue when calling get_move on move rock-climb
+Issue when calling get_move on move defog
+Issue when calling get_move on move trick-room
+Issue when calling get_move on move draco-meteor
+Issue when calling get_move on move discharge
+Issue when calling get_move on move lava-plume
+Issue when calling get_move on move leaf-storm
+Issue when calling get_move on move power-whip
+Issue when calling get_move on move rock-wrecker
+Issue when calling get_move on move cross-poison
+Issue when calling get_move on move gunk-shot
+Issue when calling get_move on move iron-head
+Issue when calling get_move on move magnet-bomb
+Issue when calling get_move on move stone-edge
+Issue when calling get_move on move captivate
+Issue when calling get_move on move stealth-rock
+Issue when calling get_move on move grass-knot
+Issue when calling get_move on move chatter
+Issue when calling get_move on move judgment
+Issue when calling get_move on move bug-bite
+Issue when calling get_move on move charge-beam
+Issue when calling get_move on move wood-hammer
+Issue when calling get_move on move aqua-jet
+Issue when calling get_move on move attack-order
+Issue when calling get_move on move defend-order
+Issue when calling get_move on move heal-order
+Issue when calling get_move on move head-smash
+Issue when calling get_move on move double-hit
+Issue when calling get_move on move roar-of-time
+Issue when calling get_move on move spacial-rend
+Issue when calling get_move on move lunar-dance
+Issue when calling get_move on move crush-grip
+Issue when calling get_move on move magma-storm
+Issue when calling get_move on move dark-void
+Issue when calling get_move on move seed-flare
+Issue when calling get_move on move ominous-wind
+Issue when calling get_move on move shadow-force
+Issue when calling get_move on move hone-claws
+Issue when calling get_move on move wide-guard
+Issue when calling get_move on move guard-split
+Issue when calling get_move on move power-split
+Issue when calling get_move on move wonder-room
+Issue when calling get_move on move psyshock
+Issue when calling get_move on move venoshock
+Issue when calling get_move on move autotomize
+Issue when calling get_move on move rage-powder
+Issue when calling get_move on move telekinesis
+Issue when calling get_move on move magic-room
+Issue when calling get_move on move smack-down
+Issue when calling get_move on move storm-throw
+Issue when calling get_move on move flame-burst
+Issue when calling get_move on move sludge-wave
+Issue when calling get_move on move quiver-dance
+Issue when calling get_move on move heavy-slam
+Issue when calling get_move on move synchronoise
+Issue when calling get_move on move electro-ball
+Issue when calling get_move on move soak
+Issue when calling get_move on move flame-charge
+Issue when calling get_move on move coil
+Issue when calling get_move on move low-sweep
+Issue when calling get_move on move acid-spray
+Issue when calling get_move on move foul-play
+Issue when calling get_move on move simple-beam
+Issue when calling get_move on move entrainment
+Issue when calling get_move on move after-you
+Issue when calling get_move on move round
+Issue when calling get_move on move echoed-voice
+Issue when calling get_move on move chip-away
+Issue when calling get_move on move clear-smog
+Issue when calling get_move on move stored-power
+Issue when calling get_move on move quick-guard
+Issue when calling get_move on move ally-switch
+Issue when calling get_move on move scald
+Issue when calling get_move on move shell-smash
+Issue when calling get_move on move heal-pulse
+Issue when calling get_move on move hex
+Issue when calling get_move on move sky-drop
+Issue when calling get_move on move shift-gear
+Issue when calling get_move on move circle-throw
+Issue when calling get_move on move incinerate
+Issue when calling get_move on move quash
+Issue when calling get_move on move acrobatics
+Issue when calling get_move on move reflect-type
+Issue when calling get_move on move retaliate
+Issue when calling get_move on move final-gambit
+Issue when calling get_move on move bestow
+Issue when calling get_move on move inferno
+Issue when calling get_move on move water-pledge
+Issue when calling get_move on move fire-pledge
+Issue when calling get_move on move grass-pledge
+Issue when calling get_move on move volt-switch
+Issue when calling get_move on move struggle-bug
+Issue when calling get_move on move bulldoze
+Issue when calling get_move on move frost-breath
+Issue when calling get_move on move dragon-tail
+Issue when calling get_move on move work-up
+Issue when calling get_move on move electroweb
+Issue when calling get_move on move wild-charge
+Issue when calling get_move on move drill-run
+Issue when calling get_move on move dual-chop
+Issue when calling get_move on move heart-stamp
+Issue when calling get_move on move horn-leech
+Issue when calling get_move on move sacred-sword
+Issue when calling get_move on move razor-shell
+Issue when calling get_move on move heat-crash
+Issue when calling get_move on move leaf-tornado
+Issue when calling get_move on move steamroller
+Issue when calling get_move on move cotton-guard
+Issue when calling get_move on move night-daze
+Issue when calling get_move on move psystrike
+Issue when calling get_move on move tail-slap
+Issue when calling get_move on move hurricane
+Issue when calling get_move on move head-charge
+Issue when calling get_move on move gear-grind
+Issue when calling get_move on move searing-shot
+Issue when calling get_move on move techno-blast
+Issue when calling get_move on move relic-song
+Issue when calling get_move on move secret-sword
+Issue when calling get_move on move glaciate
+Issue when calling get_move on move bolt-strike
+Issue when calling get_move on move blue-flare
+Issue when calling get_move on move fiery-dance
+Issue when calling get_move on move freeze-shock
+Issue when calling get_move on move ice-burn
+Issue when calling get_move on move snarl
+Issue when calling get_move on move icicle-crash
+Issue when calling get_move on move v-create
+Issue when calling get_move on move fusion-flare
+Issue when calling get_move on move fusion-bolt
+Issue when calling get_move on move flying-press
+Issue when calling get_move on move mat-block
+Issue when calling get_move on move belch
+Issue when calling get_move on move rototiller
+Issue when calling get_move on move sticky-web
+Issue when calling get_move on move fell-stinger
+Issue when calling get_move on move phantom-force
+Issue when calling get_move on move trick-or-treat
+Issue when calling get_move on move noble-roar
+Issue when calling get_move on move ion-deluge
+Issue when calling get_move on move parabolic-charge
+Issue when calling get_move on move forests-curse
+Issue when calling get_move on move petal-blizzard
+Issue when calling get_move on move freeze-dry
+Issue when calling get_move on move disarming-voice
+Issue when calling get_move on move parting-shot
+Issue when calling get_move on move topsy-turvy
+Issue when calling get_move on move draining-kiss
+Issue when calling get_move on move crafty-shield
+Issue when calling get_move on move flower-shield
+Issue when calling get_move on move grassy-terrain
+Issue when calling get_move on move misty-terrain
+Issue when calling get_move on move electrify
+Issue when calling get_move on move play-rough
+Issue when calling get_move on move fairy-wind
+Issue when calling get_move on move moonblast
+Issue when calling get_move on move boomburst
+Issue when calling get_move on move fairy-lock
+Issue when calling get_move on move kings-shield
+Issue when calling get_move on move play-nice
+Issue when calling get_move on move confide
+Issue when calling get_move on move diamond-storm
+Issue when calling get_move on move steam-eruption
+Issue when calling get_move on move hyperspace-hole
+Issue when calling get_move on move water-shuriken
+Issue when calling get_move on move mystical-fire
+Issue when calling get_move on move spiky-shield
+Issue when calling get_move on move aromatic-mist
+Issue when calling get_move on move eerie-impulse
+Issue when calling get_move on move venom-drench
+Issue when calling get_move on move powder
+Issue when calling get_move on move geomancy
+Issue when calling get_move on move magnetic-flux
+Issue when calling get_move on move happy-hour
+Issue when calling get_move on move electric-terrain
+Issue when calling get_move on move dazzling-gleam
+Issue when calling get_move on move celebrate
+Issue when calling get_move on move hold-hands
+Issue when calling get_move on move baby-doll-eyes
+Issue when calling get_move on move nuzzle
+Issue when calling get_move on move hold-back
+Issue when calling get_move on move infestation
+Issue when calling get_move on move power-up-punch
+Issue when calling get_move on move oblivion-wing
+Issue when calling get_move on move thousand-arrows
+Issue when calling get_move on move thousand-waves
+Issue when calling get_move on move lands-wrath
+Issue when calling get_move on move light-of-ruin
+Issue when calling get_move on move origin-pulse
+Issue when calling get_move on move precipice-blades
+Issue when calling get_move on move dragon-ascent
+Issue when calling get_move on move hyperspace-fury
+Issue when calling get_move on move breakneck-blitz--physical
+Issue when calling get_move on move breakneck-blitz--special
+Issue when calling get_move on move all-out-pummeling--physical
+Issue when calling get_move on move all-out-pummeling--special
+Issue when calling get_move on move supersonic-skystrike--physical
+Issue when calling get_move on move supersonic-skystrike--special
+Issue when calling get_move on move acid-downpour--physical
+Issue when calling get_move on move acid-downpour--special
+Issue when calling get_move on move tectonic-rage--physical
+Issue when calling get_move on move tectonic-rage--special
+Issue when calling get_move on move continental-crush--physical
+Issue when calling get_move on move continental-crush--special
+Issue when calling get_move on move savage-spin-out--physical
+Issue when calling get_move on move savage-spin-out--special
+Issue when calling get_move on move never-ending-nightmare--physical
+Issue when calling get_move on move never-ending-nightmare--special
+Issue when calling get_move on move corkscrew-crash--physical
+Issue when calling get_move on move corkscrew-crash--special
+Issue when calling get_move on move inferno-overdrive--physical
+Issue when calling get_move on move inferno-overdrive--special
+Issue when calling get_move on move hydro-vortex--physical
+Issue when calling get_move on move hydro-vortex--special
+Issue when calling get_move on move bloom-doom--physical
+Issue when calling get_move on move bloom-doom--special
+Issue when calling get_move on move gigavolt-havoc--physical
+Issue when calling get_move on move gigavolt-havoc--special
+Issue when calling get_move on move shattered-psyche--physical
+Issue when calling get_move on move shattered-psyche--special
+Issue when calling get_move on move subzero-slammer--physical
+Issue when calling get_move on move subzero-slammer--special
+Issue when calling get_move on move devastating-drake--physical
+Issue when calling get_move on move devastating-drake--special
+Issue when calling get_move on move black-hole-eclipse--physical
+Issue when calling get_move on move black-hole-eclipse--special
+Issue when calling get_move on move twinkle-tackle--physical
+Issue when calling get_move on move twinkle-tackle--special
+Issue when calling get_move on move catastropika
+Issue when calling get_move on move shore-up
+Issue when calling get_move on move first-impression
+Issue when calling get_move on move baneful-bunker
+Issue when calling get_move on move spirit-shackle
+Issue when calling get_move on move darkest-lariat
+Issue when calling get_move on move sparkling-aria
+Issue when calling get_move on move ice-hammer
+Issue when calling get_move on move floral-healing
+Issue when calling get_move on move high-horsepower
+Issue when calling get_move on move strength-sap
+Issue when calling get_move on move solar-blade
+Issue when calling get_move on move leafage
+Issue when calling get_move on move spotlight
+Issue when calling get_move on move toxic-thread
+Issue when calling get_move on move laser-focus
+Issue when calling get_move on move gear-up
+Issue when calling get_move on move throat-chop
+Issue when calling get_move on move pollen-puff
+Issue when calling get_move on move anchor-shot
+Issue when calling get_move on move psychic-terrain
+Issue when calling get_move on move lunge
+Issue when calling get_move on move fire-lash
+Issue when calling get_move on move power-trip
+Issue when calling get_move on move burn-up
+Issue when calling get_move on move speed-swap
+Issue when calling get_move on move smart-strike
+Issue when calling get_move on move purify
+Issue when calling get_move on move revelation-dance
+Issue when calling get_move on move core-enforcer
+Issue when calling get_move on move trop-kick
+Issue when calling get_move on move instruct
+Issue when calling get_move on move beak-blast
+Issue when calling get_move on move clanging-scales
+Issue when calling get_move on move dragon-hammer
+Issue when calling get_move on move brutal-swing
+Issue when calling get_move on move aurora-veil
+Issue when calling get_move on move sinister-arrow-raid
+Issue when calling get_move on move malicious-moonsault
+Issue when calling get_move on move oceanic-operetta
+Issue when calling get_move on move guardian-of-alola
+Issue when calling get_move on move soul-stealing-7-star-strike
+Issue when calling get_move on move stoked-sparksurfer
+Issue when calling get_move on move pulverizing-pancake
+Issue when calling get_move on move extreme-evoboost
+Issue when calling get_move on move genesis-supernova
+Issue when calling get_move on move shell-trap
+Issue when calling get_move on move fleur-cannon
+Issue when calling get_move on move psychic-fangs
+Issue when calling get_move on move stomping-tantrum
+Issue when calling get_move on move shadow-bone
+Issue when calling get_move on move accelerock
+Issue when calling get_move on move liquidation
+Issue when calling get_move on move prismatic-laser
+Issue when calling get_move on move spectral-thief
+Issue when calling get_move on move sunsteel-strike
+Issue when calling get_move on move moongeist-beam
+Issue when calling get_move on move tearful-look
+Issue when calling get_move on move zing-zap
+Issue when calling get_move on move natures-madness
+Issue when calling get_move on move multi-attack
+Issue when calling get_move on move 10-000-000-volt-thunderbolt
+Issue when calling get_move on move mind-blown
+Issue when calling get_move on move plasma-fists
+Issue when calling get_move on move photon-geyser
+Issue when calling get_move on move light-that-burns-the-sky
+Issue when calling get_move on move searing-sunraze-smash
+Issue when calling get_move on move menacing-moonraze-maelstrom
+Issue when calling get_move on move lets-snuggle-forever
+Issue when calling get_move on move splintered-stormshards
+Issue when calling get_move on move clangorous-soulblaze
+Issue when calling get_move on move zippy-zap
+Issue when calling get_move on move splishy-splash
+Issue when calling get_move on move floaty-fall
+Issue when calling get_move on move pika-papow
+Issue when calling get_move on move bouncy-bubble
+Issue when calling get_move on move buzzy-buzz
+Issue when calling get_move on move sizzly-slide
+Issue when calling get_move on move glitzy-glow
+Issue when calling get_move on move baddy-bad
+Issue when calling get_move on move sappy-seed
+Issue when calling get_move on move freezy-frost
+Issue when calling get_move on move sparkly-swirl
+Issue when calling get_move on move veevee-volley
+Issue when calling get_move on move double-iron-bash
+Issue when calling get_move on move max-guard
+Issue when calling get_move on move dynamax-cannon
+Issue when calling get_move on move snipe-shot
+Issue when calling get_move on move jaw-lock
+Issue when calling get_move on move stuff-cheeks
+Issue when calling get_move on move no-retreat
+Issue when calling get_move on move tar-shot
+Issue when calling get_move on move magic-powder
+Issue when calling get_move on move dragon-darts
+Issue when calling get_move on move teatime
+Issue when calling get_move on move octolock
+Issue when calling get_move on move bolt-beak
+Issue when calling get_move on move fishious-rend
+Issue when calling get_move on move court-change
+Issue when calling get_move on move max-flare
+Issue when calling get_move on move max-flutterby
+Issue when calling get_move on move max-lightning
+Issue when calling get_move on move max-strike
+Issue when calling get_move on move max-knuckle
+Issue when calling get_move on move max-phantasm
+Issue when calling get_move on move max-hailstorm
+Issue when calling get_move on move max-ooze
+Issue when calling get_move on move max-geyser
+Issue when calling get_move on move max-airstream
+Issue when calling get_move on move max-starfall
+Issue when calling get_move on move max-wyrmwind
+Issue when calling get_move on move max-mindstorm
+Issue when calling get_move on move max-rockfall
+Issue when calling get_move on move max-quake
+Issue when calling get_move on move max-darkness
+Issue when calling get_move on move max-overgrowth
+Issue when calling get_move on move max-steelspike
+Issue when calling get_move on move clangorous-soul
+Issue when calling get_move on move body-press
+Issue when calling get_move on move decorate
+Issue when calling get_move on move drum-beating
+Issue when calling get_move on move snap-trap
+Issue when calling get_move on move pyro-ball
+Issue when calling get_move on move behemoth-blade
+Issue when calling get_move on move behemoth-bash
+Issue when calling get_move on move aura-wheel
+Issue when calling get_move on move breaking-swipe
+Issue when calling get_move on move branch-poke
+Issue when calling get_move on move overdrive
+Issue when calling get_move on move apple-acid
+Issue when calling get_move on move grav-apple
+Issue when calling get_move on move spirit-break
+Issue when calling get_move on move strange-steam
+Issue when calling get_move on move life-dew
+Issue when calling get_move on move obstruct
+Issue when calling get_move on move false-surrender
+Issue when calling get_move on move meteor-assault
+Issue when calling get_move on move eternabeam
+Issue when calling get_move on move steel-beam
+Issue when calling get_move on move expanding-force
+Issue when calling get_move on move steel-roller
+Issue when calling get_move on move scale-shot
+Issue when calling get_move on move meteor-beam
+Issue when calling get_move on move shell-side-arm
+Issue when calling get_move on move misty-explosion
+Issue when calling get_move on move grassy-glide
+Issue when calling get_move on move rising-voltage
+Issue when calling get_move on move terrain-pulse
+Issue when calling get_move on move skitter-smack
+Issue when calling get_move on move burning-jealousy
+Issue when calling get_move on move lash-out
+Issue when calling get_move on move poltergeist
+Issue when calling get_move on move corrosive-gas
+Issue when calling get_move on move coaching
+Issue when calling get_move on move flip-turn
+Issue when calling get_move on move triple-axel
+Issue when calling get_move on move dual-wingbeat
+Issue when calling get_move on move scorching-sands
+Issue when calling get_move on move jungle-healing
+Issue when calling get_move on move wicked-blow
+Issue when calling get_move on move surging-strikes
+Issue when calling get_move on move thunder-cage
+Issue when calling get_move on move dragon-energy
+Issue when calling get_move on move freezing-glare
+Issue when calling get_move on move fiery-wrath
+Issue when calling get_move on move thunderous-kick
+Issue when calling get_move on move glacial-lance
+Issue when calling get_move on move astral-barrage
+Issue when calling get_move on move eerie-spell
+Issue when calling get_move on move dire-claw
+Issue when calling get_move on move psyshield-bash
+Issue when calling get_move on move power-shift
+Issue when calling get_move on move stone-axe
+Issue when calling get_move on move springtide-storm
+Issue when calling get_move on move mystical-power
+Issue when calling get_move on move raging-fury
+Issue when calling get_move on move wave-crash
+Issue when calling get_move on move chloroblast
+Issue when calling get_move on move mountain-gale
+Issue when calling get_move on move victory-dance
+Issue when calling get_move on move headlong-rush
+Issue when calling get_move on move barb-barrage
+Issue when calling get_move on move esper-wing
+Issue when calling get_move on move bitter-malice
+Issue when calling get_move on move shelter
+Issue when calling get_move on move triple-arrows
+Issue when calling get_move on move infernal-parade
+Issue when calling get_move on move ceaseless-edge
+Issue when calling get_move on move bleakwind-storm
+Issue when calling get_move on move wildbolt-storm
+Issue when calling get_move on move sandsear-storm
+Issue when calling get_move on move lunar-blessing
+Issue when calling get_move on move take-heart
+Issue when calling get_move on move tera-blast
+Issue when calling get_move on move silk-trap
+Issue when calling get_move on move axe-kick
+Issue when calling get_move on move last-respects
+Issue when calling get_move on move lumina-crash
+Issue when calling get_move on move order-up
+Issue when calling get_move on move jet-punch
+Issue when calling get_move on move spicy-extract
+Issue when calling get_move on move spin-out
+Issue when calling get_move on move population-bomb
+Issue when calling get_move on move ice-spinner
+Issue when calling get_move on move glaive-rush
+Issue when calling get_move on move revival-blessing
+Issue when calling get_move on move salt-cure
+Issue when calling get_move on move triple-dive
+Issue when calling get_move on move mortal-spin
+Issue when calling get_move on move doodle
+Issue when calling get_move on move fillet-away
+Issue when calling get_move on move kowtow-cleave
+Issue when calling get_move on move flower-trick
+Issue when calling get_move on move torch-song
+Issue when calling get_move on move aqua-step
+Issue when calling get_move on move raging-bull
+Issue when calling get_move on move make-it-rain
+Issue when calling get_move on move psyblade
+Issue when calling get_move on move hydro-steam
+Issue when calling get_move on move ruination
+Issue when calling get_move on move collision-course
+Issue when calling get_move on move electro-drift
+Issue when calling get_move on move shed-tail
+Issue when calling get_move on move chilly-reception
+Issue when calling get_move on move tidy-up
+Issue when calling get_move on move snowscape
+Issue when calling get_move on move pounce
+Issue when calling get_move on move trailblaze
+Issue when calling get_move on move chilling-water
+Issue when calling get_move on move hyper-drill
+Issue when calling get_move on move twin-beam
+Issue when calling get_move on move rage-fist
+Issue when calling get_move on move armor-cannon
+Issue when calling get_move on move bitter-blade
+Issue when calling get_move on move double-shock
+Issue when calling get_move on move gigaton-hammer
+Issue when calling get_move on move comeuppance
+Issue when calling get_move on move aqua-cutter
+Issue when calling get_move on move blazing-torque
+Issue when calling get_move on move wicked-torque
+Issue when calling get_move on move noxious-torque
+Issue when calling get_move on move combat-torque
+Issue when calling get_move on move magical-torque
+Issue when calling get_move on move blood-moon
+Issue when calling get_move on move matcha-gotcha
+Issue when calling get_move on move syrup-bomb
+Issue when calling get_move on move ivy-cudgel
+Issue when calling get_move on move electro-shot
+Issue when calling get_move on move tera-starstorm
+Issue when calling get_move on move fickle-beam
+Issue when calling get_move on move burning-bulwark
+Issue when calling get_move on move thunderclap
+Issue when calling get_move on move mighty-cleave
+Issue when calling get_move on move tachyon-cutter
+Issue when calling get_move on move hard-press
+Issue when calling get_move on move dragon-cheer
+Issue when calling get_move on move alluring-voice
+Issue when calling get_move on move temper-flare
+Issue when calling get_move on move supercell-slam
+Issue when calling get_move on move psychic-noise
+Issue when calling get_move on move upper-hand
+Issue when calling get_move on move malignant-chain
