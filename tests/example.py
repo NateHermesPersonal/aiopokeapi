@@ -10,7 +10,7 @@ import re
 #    await client.close()
 
 
-async def main():
+async def samples():
     async with aiopoke.AiopokeClient() as client:
         # pokemon = await client.get_pokemon(25)
         # print(f"{pokemon.name}")
@@ -61,4 +61,57 @@ async def main():
         with open("output/moves.txt", "w") as moveFile:
             moveFile.write("\n".join(moves))
 
-asyncio.run(main())
+async def write_moves():
+    async with aiopoke.AiopokeClient() as client:
+        gen = 1
+        moves = []
+        finished = False
+        while not finished:
+            try:
+                generation = await client.get_generation(gen)
+                for move in generation.moves:
+                    moves.append(f"{move.name}")
+                    # moves.append(f"{move.id}")
+                gen += 1
+            except Exception as e:
+                finished = True
+        with open("output/movesByGen.txt", "w") as moveFile:
+            moveFile.write("\n".join(moves))
+        return moves
+
+async def read_moves(movesList=None):
+    async with aiopoke.AiopokeClient() as client:
+        if not movesList:
+            with open("output/movesByGen.txt", "r") as moveFile:
+                moves = moveFile.read().splitlines()
+        else:
+            moves = movesList
+        print(len(moves))
+        issueMoves = []
+        issues = 0
+        for move in moves:
+            try:
+                await client.get_move(move)
+                issueMoves.append(move)
+            except Exception as e:
+                issueMoves.append(f"Issue when calling get_move on move {move}")
+                issues += 1
+        with open("output/movesWithIssues_names.txt", "w") as moveFile:
+        # with open("output/movesWithIssues.txt", "w") as moveFile:
+            moveFile.write("\n".join(issueMoves))
+        print(issues)
+
+async def tests():
+    async with aiopoke.AiopokeClient() as client:
+        move = await client.get_move(3)
+        # move = await client.get_move(13)
+        # move = await client.get_move("pound")
+        # move = await client.get_move("thrash")
+        print(f"{move.name}")
+
+
+# asyncio.run(samples())
+# moves = asyncio.run(write_moves())
+# asyncio.run(read_moves(moves))
+# asyncio.run(read_moves())
+asyncio.run(tests())
