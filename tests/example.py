@@ -25,6 +25,9 @@ async def main():
         abilities = []
         moves = []
         finished = False
+        # move = await client.get_move("eruption") # works, prints 284 (https://pokeapi.co/api/v2/move/eruption)
+        # move = await client.get_move("doodle") # TypeError: aiopoke.utils.minimal_resources.Url() argument after ** must be a mapping, not NoneType (https://pokeapi.co/api/v2/move/doodle)
+        # print(f"{move.id}")
         while not finished:
             try:
                 generation = await client.get_generation(gen)
@@ -32,9 +35,11 @@ async def main():
                 # print(f"{generation.main_region}")
                 new = len(generation.pokemon_species)
                 for ability in generation.abilities:
+                    # abilities.append(f"{ability.name}({ability.id})")
                     abilities.append(ability.name)
                 for move in generation.moves:
                     if not re.search("(special|physical)", move.name): # remove Z moves
+                        # moves.append(f"{move.name}({move.id})")
                         moves.append(move.name)
                 print(f"{generation.name} added {new} new Pokemon")
                 total += new
