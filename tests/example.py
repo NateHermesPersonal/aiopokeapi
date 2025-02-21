@@ -103,6 +103,10 @@ async def read_moves(movesList=None):
 
 async def tests():
     async with aiopoke.AiopokeClient() as client:
+        # tasks = [client.get_move(i) for i in range(1, 200)]
+        # results = await asyncio.gather(*tasks)
+        # for r in results:
+        #     print (f"{r}")
         move = await client.get_move(3)
         # move = await client.get_move(13)
         # move = await client.get_move("pound")
