@@ -2,12 +2,13 @@ import asyncio
 import aiopoke
 import re
 
-# async def main():
-#    client = aiopoke.AiopokeClient()
+async def old():
+    client = aiopoke.AiopokeClient()
+    move = await client.get_move(13)
+    print(f"{move.name}")
 #    pokemon = await client.get_pokemon(25)
 #    print(f"{pokemon.name}")
-
-#    await client.close()
+    await client.close()
 
 
 async def samples():
@@ -70,8 +71,12 @@ async def write_moves():
             try:
                 generation = await client.get_generation(gen)
                 for move in generation.moves:
-                    moves.append(f"{move.name}")
+                    # moves.append(f"{move.name}")
                     # moves.append(f"{move.id}")
+                    # moves.append(move)
+                    # dict = move.learned_by_pokemon
+                    moves.append(f"{move.id}")
+                    # print(f"{dict}")
                 gen += 1
             except Exception as e:
                 finished = True
@@ -89,33 +94,59 @@ async def read_moves(movesList=None):
         print(len(moves))
         issueMoves = []
         issues = 0
+        # tasks = [client.get_move(move) for move in moves]
+        # results = await asyncio.gather(*tasks)
         for move in moves:
             try:
                 await client.get_move(move)
                 issueMoves.append(move)
+                # print(f"{move.name}")
             except Exception as e:
-                issueMoves.append(f"Issue when calling get_move on move {move}")
+                # print(f"Exception {e}")
+                # issueMoves.append(move)
+                issueMoves.append(f"Issue with move {move}")
                 issues += 1
-        with open("output/movesWithIssues_names.txt", "w") as moveFile:
-        # with open("output/movesWithIssues.txt", "w") as moveFile:
+        # with open("output/movesWithIssues_names.txt", "w") as moveFile:
+        with open("output/movesWithIssues.txt", "w") as moveFile:
             moveFile.write("\n".join(issueMoves))
         print(issues)
 
 async def tests():
     async with aiopoke.AiopokeClient() as client:
-        # tasks = [client.get_move(i) for i in range(1, 200)]
+        # gen = 1
+        # moves = []
+        # finished = False
+        # while not finished:
+        #     try:
+        #         generation = await client.get_generation(gen)
+        #         for move in generation.moves:
+        #             # moves.append(f"{move.name}")
+        #             # moves.append(f"{move.id}")
+        #             # moves.append(move)
+        #             # dict = move.learned_by_pokemon
+        #             moves.append(move.name)
+        #             # print(f"{dict}")
+        #         gen += 1
+        #     except Exception as e:
+        #         finished = True
+        # tasks = [client.get_move(move) for move in moves]
         # results = await asyncio.gather(*tasks)
         # for r in results:
-        #     print (f"{r}")
-        move = await client.get_move(3)
+        #     print (f"{r.name}")
         # move = await client.get_move(13)
+        # print(f"{move.name}")
+        move = await client.get_move(405)
+        print(f"{move.name}")
         # move = await client.get_move("pound")
         # move = await client.get_move("thrash")
-        print(f"{move.name}")
 
 
 # asyncio.run(samples())
 # moves = asyncio.run(write_moves())
 # asyncio.run(read_moves(moves))
-# asyncio.run(read_moves())
-asyncio.run(tests())
+# asyncio.run(old())
+
+asyncio.run(write_moves())
+asyncio.run(read_moves())
+
+# asyncio.run(tests())

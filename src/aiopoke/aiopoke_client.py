@@ -198,6 +198,7 @@ class AiopokeClient(metaclass=MetaClient):
         return Machine(**data)
 
     async def get_move(self, name_or_id: Union[str, int]) -> Move:
+        print("got here")
         data = await self.http.get(f"move/{name_or_id}")
         return Move(**data)
 

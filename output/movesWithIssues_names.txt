@@ -10,106 +10,106 @@ thunder-punch
 scratch
 vice-grip
 guillotine
-Issue when calling get_move on move razor-wind
-Issue when calling get_move on move swords-dance
+razor-wind
+swords-dance
 cut
 gust
-Issue when calling get_move on move wing-attack
-Issue when calling get_move on move whirlwind
-Issue when calling get_move on move fly
-Issue when calling get_move on move bind
+wing-attack
+whirlwind
+fly
+bind
 slam
-Issue when calling get_move on move vine-whip
+vine-whip
 stomp
 double-kick
 mega-kick
-Issue when calling get_move on move jump-kick
+jump-kick
 rolling-kick
 sand-attack
 headbutt
 horn-attack
 fury-attack
 horn-drill
-Issue when calling get_move on move tackle
+tackle
 body-slam
-Issue when calling get_move on move wrap
+wrap
 take-down
-Issue when calling get_move on move thrash
-Issue when calling get_move on move double-edge
+thrash
+double-edge
 tail-whip
-Issue when calling get_move on move poison-sting
+poison-sting
 twineedle
-Issue when calling get_move on move pin-missile
+pin-missile
 leer
 bite
 growl
-Issue when calling get_move on move roar
+roar
 sing
 supersonic
 sonic-boom
-Issue when calling get_move on move disable
+disable
 acid
 ember
-Issue when calling get_move on move flamethrower
+flamethrower
 mist
 water-gun
-Issue when calling get_move on move hydro-pump
-Issue when calling get_move on move surf
-Issue when calling get_move on move ice-beam
-Issue when calling get_move on move blizzard
+hydro-pump
+surf
+ice-beam
+blizzard
 psybeam
 bubble-beam
 aurora-beam
 hyper-beam
 peck
 drill-peck
-Issue when calling get_move on move submission
-Issue when calling get_move on move low-kick
+submission
+low-kick
 counter
 seismic-toss
 strength
-Issue when calling get_move on move absorb
-Issue when calling get_move on move mega-drain
+absorb
+mega-drain
 leech-seed
-Issue when calling get_move on move growth
+growth
 razor-leaf
-Issue when calling get_move on move solar-beam
+solar-beam
 poison-powder
 stun-spore
 sleep-powder
-Issue when calling get_move on move petal-dance
-Issue when calling get_move on move string-shot
+petal-dance
+string-shot
 dragon-rage
-Issue when calling get_move on move fire-spin
+fire-spin
 thunder-shock
-Issue when calling get_move on move thunderbolt
-Issue when calling get_move on move thunder-wave
-Issue when calling get_move on move thunder
-Issue when calling get_move on move rock-throw
+thunderbolt
+thunder-wave
+thunder
+rock-throw
 earthquake
 fissure
-Issue when calling get_move on move dig
-Issue when calling get_move on move toxic
+dig
+toxic
 confusion
-Issue when calling get_move on move psychic
-Issue when calling get_move on move hypnosis
+psychic
+hypnosis
 meditate
 agility
 quick-attack
 rage
-Issue when calling get_move on move teleport
+teleport
 night-shade
 mimic
 screech
 double-team
-Issue when calling get_move on move recover
+recover
 harden
-Issue when calling get_move on move minimize
+minimize
 smokescreen
 confuse-ray
 withdraw
 defense-curl
-Issue when calling get_move on move barrier
+barrier
 light-screen
 haze
 reflect
@@ -117,71 +117,71 @@ focus-energy
 bide
 metronome
 mirror-move
-Issue when calling get_move on move self-destruct
+self-destruct
 egg-bomb
-Issue when calling get_move on move lick
-Issue when calling get_move on move smog
+lick
+smog
 sludge
 bone-club
-Issue when calling get_move on move fire-blast
+fire-blast
 waterfall
-Issue when calling get_move on move clamp
+clamp
 swift
-Issue when calling get_move on move skull-bash
+skull-bash
 spike-cannon
 constrict
 amnesia
 kinesis
 soft-boiled
-Issue when calling get_move on move high-jump-kick
-Issue when calling get_move on move glare
+high-jump-kick
+glare
 dream-eater
-Issue when calling get_move on move poison-gas
+poison-gas
 barrage
-Issue when calling get_move on move leech-life
+leech-life
 lovely-kiss
-Issue when calling get_move on move sky-attack
+sky-attack
 transform
-Issue when calling get_move on move bubble
-Issue when calling get_move on move dizzy-punch
+bubble
+dizzy-punch
 spore
-Issue when calling get_move on move flash
-Issue when calling get_move on move psywave
+flash
+psywave
 splash
-Issue when calling get_move on move acid-armor
-Issue when calling get_move on move crabhammer
-Issue when calling get_move on move explosion
+acid-armor
+crabhammer
+explosion
 fury-swipes
 bonemerang
 rest
-Issue when calling get_move on move rock-slide
+rock-slide
 hyper-fang
 sharpen
 conversion
-Issue when calling get_move on move tri-attack
+tri-attack
 super-fang
 slash
 substitute
-Issue when calling get_move on move struggle
+struggle
 sketch
 triple-kick
-Issue when calling get_move on move thief
+thief
 spider-web
-Issue when calling get_move on move mind-reader
+mind-reader
 nightmare
 flame-wheel
-Issue when calling get_move on move snore
+snore
 curse
 flail
 conversion-2
 aeroblast
-Issue when calling get_move on move cotton-spore
+cotton-spore
 reversal
 spite
 powder-snow
 protect
 mach-punch
-Issue when calling get_move on move scary-face
+scary-face
 feint-attack
 sweet-kiss
 belly-drum
@@ -189,30 +189,30 @@ sludge-bomb
 mud-slap
 octazooka
 spikes
-Issue when calling get_move on move zap-cannon
+zap-cannon
 foresight
 destiny-bond
-Issue when calling get_move on move perish-song
+perish-song
 icy-wind
 detect
-Issue when calling get_move on move bone-rush
+bone-rush
 lock-on
-Issue when calling get_move on move outrage
+outrage
 sandstorm
-Issue when calling get_move on move giga-drain
+giga-drain
 endure
 charm
 rollout
 false-swipe
-Issue when calling get_move on move swagger
+swagger
 milk-drink
 spark
-Issue when calling get_move on move fury-cutter
+fury-cutter
 steel-wing
 mean-look
 attract
 sleep-talk
-Issue when calling get_move on move heal-bell
+heal-bell
 return
 present
 frustration
@@ -226,7 +226,7 @@ dragon-breath
 baton-pass
 encore
 pursuit
-Issue when calling get_move on move rapid-spin
+rapid-spin
 sweet-scent
 iron-tail
 metal-claw
@@ -234,7 +234,7 @@ vital-throw
 morning-sun
 synthesis
 moonlight
-Issue when calling get_move on move hidden-power
+hidden-power
 cross-chop
 twister
 rain-dance
@@ -245,26 +245,26 @@ psych-up
 extreme-speed
 ancient-power
 shadow-ball
-Issue when calling get_move on move future-sight
-Issue when calling get_move on move rock-smash
-Issue when calling get_move on move whirlpool
-Issue when calling get_move on move beat-up
+future-sight
+rock-smash
+whirlpool
+beat-up
 fake-out
-Issue when calling get_move on move uproar
-Issue when calling get_move on move stockpile
+uproar
+stockpile
 spit-up
 swallow
-Issue when calling get_move on move heat-wave
+heat-wave
 hail
 torment
 flatter
-Issue when calling get_move on move will-o-wisp
+will-o-wisp
 memento
 facade
 focus-punch
-Issue when calling get_move on move smelling-salts
-Issue when calling get_move on move follow-me
-Issue when calling get_move on move nature-power
+smelling-salts
+follow-me
+nature-power
 charge
 taunt
 helping-hand
@@ -279,7 +279,7 @@ recycle
 revenge
 brick-break
 yawn
-Issue when calling get_move on move knock-off
+knock-off
 endeavor
 eruption
 skill-swap
@@ -288,10 +288,10 @@ refresh
 grudge
 snatch
 secret-power
-Issue when calling get_move on move dive
+dive
 arm-thrust
 camouflage
-Issue when calling get_move on move tail-glow
+tail-glow
 luster-purge
 mist-ball
 feather-dance
@@ -302,19 +302,19 @@ ice-ball
 needle-arm
 slack-off
 hyper-voice
-Issue when calling get_move on move poison-fang
+poison-fang
 crush-claw
 blast-burn
 hydro-cannon
-Issue when calling get_move on move meteor-mash
+meteor-mash
 astonish
 weather-ball
-Issue when calling get_move on move aromatherapy
+aromatherapy
 fake-tears
-Issue when calling get_move on move air-cutter
-Issue when calling get_move on move overheat
+air-cutter
+overheat
 odor-sleuth
-Issue when calling get_move on move rock-tomb
+rock-tomb
 silver-wind
 metal-sound
 grass-whistle
@@ -323,34 +323,34 @@ cosmic-power
 water-spout
 signal-beam
 shadow-punch
-Issue when calling get_move on move extrasensory
+extrasensory
 sky-uppercut
-Issue when calling get_move on move sand-tomb
+sand-tomb
 sheer-cold
-Issue when calling get_move on move muddy-water
-Issue when calling get_move on move bullet-seed
+muddy-water
+bullet-seed
 aerial-ace
-Issue when calling get_move on move icicle-spear
+icicle-spear
 iron-defense
 block
-Issue when calling get_move on move howl
+howl
 dragon-claw
 frenzy-plant
 bulk-up
 bounce
 mud-shot
 poison-tail
-Issue when calling get_move on move covet
+covet
 volt-tackle
 magical-leaf
 water-sport
 calm-mind
-Issue when calling get_move on move leaf-blade
+leaf-blade
 dragon-dance
-Issue when calling get_move on move rock-blast
+rock-blast
 shock-wave
 water-pulse
-Issue when calling get_move on move doom-desire
+doom-desire
 psycho-boost
 Issue when calling get_move on move shadow-rush
 Issue when calling get_move on move shadow-blast
