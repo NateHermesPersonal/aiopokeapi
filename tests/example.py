@@ -99,7 +99,7 @@ async def read_moves(movesList=None):
         tasks = [client.get_move(move) for move in moves]
         results = await asyncio.gather(*tasks)
         for r in results:
-            print(f"{r.name}")
+            print(f"{r.name}") # works, prints all moves
         # for move in moves:
         #     try:
         #         await client.get_move(move)
