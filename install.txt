@@ -1,4 +1,4 @@
 pip uninstall aiopokeapi
 
-pip install "git+https://github.com/beastmatser/aiopokeapi.git
-pip uninstall "git+https://github.com/beastmatser/aiopokeapi.git
+pip install "git+https://github.com/beastmatser/aiopokeapi.git"
+pip uninstall "git+https://github.com/beastmatser/aiopokeapi.git"
