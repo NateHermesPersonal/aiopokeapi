@@ -1,6 +1,8 @@
+# import sys
 import asyncio
 import aiopoke
 import re
+# sys.path.append('C:/Users/nated/Documents/Github/aiopokeapi/src/aiopoke')
 
 async def old():
     client = aiopoke.AiopokeClient()
@@ -135,7 +137,7 @@ async def tests():
         #     print (f"{r.name}")
         # move = await client.get_move(13)
         # print(f"{move.name}")
-        move = await client.get_move(405)
+        move = await client.get_move(407)
         print(f"{move.name}")
         # move = await client.get_move("pound")
         # move = await client.get_move("thrash")
@@ -146,7 +148,7 @@ async def tests():
 # asyncio.run(read_moves(moves))
 # asyncio.run(old())
 
-asyncio.run(write_moves())
-asyncio.run(read_moves())
+# asyncio.run(write_moves())
+# asyncio.run(read_moves())
 
-# asyncio.run(tests())
+asyncio.run(tests())
