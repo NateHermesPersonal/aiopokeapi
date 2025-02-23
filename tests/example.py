@@ -109,14 +109,43 @@ async def write_abilities():
         return abilities
 
 async def read_missing_moves():
-    with open("input/missing_moves_114.txt", "r") as moveFile:
-        missingMoves = moveFile.read().splitlines()
-        print(f"{len(missingMoves)}")
+    async with aiopoke.AiopokeClient() as client:
+        missingMoveDict = {}
+        # missingMoveDict[pokemon] = []
+        missingMoves = []
+        with open("input/missing_moves_114.txt", "r") as moveFile:
+            missingMoves = moveFile.read().splitlines()
+        # print(f"{len(missingMoves)}")
+        tasks = [client.get_move(m) for m in missingMoves]
+        results = await asyncio.gather(*tasks)
+        for result in results:
+            pokemon = []
+            for p in result.learned_by_pokemon:
+                if f"{p.name}" in missingMoveDict:
+                    missingMoveDict[p.name].append(result.name)
+                else:
+                    missingMoveDict[p.name] = []
+                    missingMoveDict[p.name].append(result.name)
+                pokemon.append(p.name)
+            if len(pokemon) == 0:
+                print(f"{result.name} - {len(pokemon)} Pokemon with this move")
+        # for pok in missingMoveDict.keys():
+        #     print(f"{pok} {len(missingMoveDict[pok])}")
+        print(f"{len(missingMoveDict.keys())}")
         
 async def read_missing_abilities():
-    with open("input/missing_abilities_13.txt", "r") as abilityFile:
-        missingAbilities = abilityFile.read().splitlines()
-        print(f"{len(missingAbilities)}")
+    async with aiopoke.AiopokeClient() as client:
+        missingAbilities = []
+        with open("input/missing_abilities_13.txt", "r") as abilityFile:
+            missingAbilities = abilityFile.read().splitlines()
+        # print(f"{len(missingAbilities)}")
+        tasks = [client.get_ability(a) for a in missingAbilities]
+        results = await asyncio.gather(*tasks)
+        for result in results:
+            pokemon = []
+            for p in result.pokemon:
+                pokemon.append(p.pokemon.name)
+            print(f"{result.name} - {len(pokemon)} Pokemon with this ability {",".join(pokemon)}")
 
 async def read_moves(movesList=None):
     async with aiopoke.AiopokeClient() as client:
@@ -171,10 +200,11 @@ async def tests():
         #     print (f"{r.name}")
         # move = await client.get_move(13)
         # print(f"{move.name}")
-        move = await client.get_move(407)
+        # move = await client.get_move(407)
+        move = await client.get_move("behemoth-bash")
+        move = await client.get_move("behemoth-blade")
+        move = await client.get_move("hold-hands")
         print(f"{move.name}")
-        # move = await client.get_move("pound")
-        # move = await client.get_move("thrash")
 
 
 # asyncio.run(samples())
@@ -186,7 +216,7 @@ async def tests():
 # asyncio.run(write_moves())
 # asyncio.run(read_moves())
 
-# asyncio.run(read_missing_moves())
-asyncio.run(read_missing_abilities())
+asyncio.run(read_missing_moves())
+# asyncio.run(read_missing_abilities())
 
 # asyncio.run(tests())
