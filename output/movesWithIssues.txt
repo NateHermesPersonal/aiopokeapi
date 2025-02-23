@@ -352,586 +352,586 @@
 352
 353
 354
-Issue with move 10001
-Issue with move 10002
-Issue with move 10003
-Issue with move 10004
-Issue with move 10005
-Issue with move 10006
-Issue with move 10007
-Issue with move 10008
-Issue with move 10009
-Issue with move 10010
-Issue with move 10011
-Issue with move 10012
-Issue with move 10013
-Issue with move 10014
-Issue with move 10015
-Issue with move 10016
-Issue with move 10017
-Issue with move 10018
-Issue with move 355
-Issue with move 356
-Issue with move 357
-Issue with move 358
-Issue with move 359
-Issue with move 360
-Issue with move 361
-Issue with move 362
-Issue with move 363
-Issue with move 364
-Issue with move 365
-Issue with move 366
-Issue with move 367
-Issue with move 368
-Issue with move 369
-Issue with move 370
-Issue with move 371
-Issue with move 372
-Issue with move 373
-Issue with move 374
-Issue with move 375
-Issue with move 376
-Issue with move 377
-Issue with move 378
-Issue with move 379
-Issue with move 380
-Issue with move 381
-Issue with move 382
-Issue with move 383
-Issue with move 384
-Issue with move 385
-Issue with move 386
-Issue with move 387
-Issue with move 388
-Issue with move 389
-Issue with move 390
-Issue with move 391
-Issue with move 392
-Issue with move 393
-Issue with move 394
-Issue with move 395
-Issue with move 396
-Issue with move 397
-Issue with move 398
-Issue with move 399
-Issue with move 400
-Issue with move 401
-Issue with move 402
-Issue with move 403
-Issue with move 404
-Issue with move 405
-Issue with move 406
-Issue with move 407
-Issue with move 408
-Issue with move 409
-Issue with move 410
-Issue with move 411
-Issue with move 412
-Issue with move 413
-Issue with move 414
-Issue with move 415
-Issue with move 416
-Issue with move 417
-Issue with move 418
-Issue with move 419
-Issue with move 420
-Issue with move 421
-Issue with move 422
-Issue with move 423
-Issue with move 424
-Issue with move 425
-Issue with move 426
-Issue with move 427
-Issue with move 428
-Issue with move 429
-Issue with move 430
-Issue with move 431
-Issue with move 432
-Issue with move 433
-Issue with move 434
-Issue with move 435
-Issue with move 436
-Issue with move 437
-Issue with move 438
-Issue with move 439
-Issue with move 440
-Issue with move 441
-Issue with move 442
-Issue with move 443
-Issue with move 444
-Issue with move 445
-Issue with move 446
-Issue with move 447
-Issue with move 448
-Issue with move 449
-Issue with move 450
-Issue with move 451
-Issue with move 452
-Issue with move 453
-Issue with move 454
-Issue with move 455
-Issue with move 456
-Issue with move 457
-Issue with move 458
-Issue with move 459
-Issue with move 460
-Issue with move 461
-Issue with move 462
-Issue with move 463
-Issue with move 464
-Issue with move 465
-Issue with move 466
-Issue with move 467
-Issue with move 468
-Issue with move 469
-Issue with move 470
-Issue with move 471
-Issue with move 472
-Issue with move 473
-Issue with move 474
-Issue with move 475
-Issue with move 476
-Issue with move 477
-Issue with move 478
-Issue with move 479
-Issue with move 480
-Issue with move 481
-Issue with move 482
-Issue with move 483
-Issue with move 484
-Issue with move 485
-Issue with move 486
-Issue with move 487
-Issue with move 488
-Issue with move 489
-Issue with move 490
-Issue with move 491
-Issue with move 492
-Issue with move 493
-Issue with move 494
-Issue with move 495
-Issue with move 496
-Issue with move 497
-Issue with move 498
-Issue with move 499
-Issue with move 500
-Issue with move 501
-Issue with move 502
-Issue with move 503
-Issue with move 504
-Issue with move 505
-Issue with move 506
-Issue with move 507
-Issue with move 508
-Issue with move 509
-Issue with move 510
-Issue with move 511
-Issue with move 512
-Issue with move 513
-Issue with move 514
-Issue with move 515
-Issue with move 516
-Issue with move 517
-Issue with move 518
-Issue with move 519
-Issue with move 520
-Issue with move 521
-Issue with move 522
-Issue with move 523
-Issue with move 524
-Issue with move 525
-Issue with move 526
-Issue with move 527
-Issue with move 528
-Issue with move 529
-Issue with move 530
-Issue with move 531
-Issue with move 532
-Issue with move 533
-Issue with move 534
-Issue with move 535
-Issue with move 536
-Issue with move 537
-Issue with move 538
-Issue with move 539
-Issue with move 540
-Issue with move 541
-Issue with move 542
-Issue with move 543
-Issue with move 544
-Issue with move 545
-Issue with move 546
-Issue with move 547
-Issue with move 548
-Issue with move 549
-Issue with move 550
-Issue with move 551
-Issue with move 552
-Issue with move 553
-Issue with move 554
-Issue with move 555
-Issue with move 556
-Issue with move 557
-Issue with move 558
-Issue with move 559
-Issue with move 560
-Issue with move 561
-Issue with move 562
-Issue with move 563
-Issue with move 564
-Issue with move 565
-Issue with move 566
-Issue with move 567
-Issue with move 568
-Issue with move 569
-Issue with move 570
-Issue with move 571
-Issue with move 572
-Issue with move 573
-Issue with move 574
-Issue with move 575
-Issue with move 576
-Issue with move 577
-Issue with move 578
-Issue with move 579
-Issue with move 580
-Issue with move 581
-Issue with move 582
-Issue with move 583
-Issue with move 584
-Issue with move 585
-Issue with move 586
-Issue with move 587
-Issue with move 588
-Issue with move 589
-Issue with move 590
-Issue with move 591
-Issue with move 592
-Issue with move 593
-Issue with move 594
-Issue with move 595
-Issue with move 596
-Issue with move 597
-Issue with move 598
-Issue with move 599
-Issue with move 600
-Issue with move 601
-Issue with move 602
-Issue with move 603
-Issue with move 604
-Issue with move 605
-Issue with move 606
-Issue with move 607
-Issue with move 608
-Issue with move 609
-Issue with move 610
-Issue with move 611
-Issue with move 612
-Issue with move 613
-Issue with move 614
-Issue with move 615
-Issue with move 616
-Issue with move 617
-Issue with move 618
-Issue with move 619
-Issue with move 620
-Issue with move 621
-Issue with move 622
-Issue with move 623
-Issue with move 624
-Issue with move 625
-Issue with move 626
-Issue with move 627
-Issue with move 628
-Issue with move 629
-Issue with move 630
-Issue with move 631
-Issue with move 632
-Issue with move 633
-Issue with move 634
-Issue with move 635
-Issue with move 636
-Issue with move 637
-Issue with move 638
-Issue with move 639
-Issue with move 640
-Issue with move 641
-Issue with move 642
-Issue with move 643
-Issue with move 644
-Issue with move 645
-Issue with move 646
-Issue with move 647
-Issue with move 648
-Issue with move 649
-Issue with move 650
-Issue with move 651
-Issue with move 652
-Issue with move 653
-Issue with move 654
-Issue with move 655
-Issue with move 656
-Issue with move 657
-Issue with move 658
-Issue with move 659
-Issue with move 660
-Issue with move 661
-Issue with move 662
-Issue with move 663
-Issue with move 664
-Issue with move 665
-Issue with move 666
-Issue with move 667
-Issue with move 668
-Issue with move 669
-Issue with move 670
-Issue with move 671
-Issue with move 672
-Issue with move 673
-Issue with move 674
-Issue with move 675
-Issue with move 676
-Issue with move 677
-Issue with move 678
-Issue with move 679
-Issue with move 680
-Issue with move 681
-Issue with move 682
-Issue with move 683
-Issue with move 684
-Issue with move 685
-Issue with move 686
-Issue with move 687
-Issue with move 688
-Issue with move 689
-Issue with move 690
-Issue with move 691
-Issue with move 692
-Issue with move 693
-Issue with move 694
-Issue with move 695
-Issue with move 696
-Issue with move 697
-Issue with move 698
-Issue with move 699
-Issue with move 700
-Issue with move 701
-Issue with move 702
-Issue with move 703
-Issue with move 704
-Issue with move 705
-Issue with move 706
-Issue with move 707
-Issue with move 708
-Issue with move 709
-Issue with move 710
-Issue with move 711
-Issue with move 712
-Issue with move 713
-Issue with move 714
-Issue with move 715
-Issue with move 716
-Issue with move 717
-Issue with move 718
-Issue with move 719
-Issue with move 720
-Issue with move 721
-Issue with move 722
-Issue with move 723
-Issue with move 724
-Issue with move 725
-Issue with move 726
-Issue with move 727
-Issue with move 728
-Issue with move 729
-Issue with move 730
-Issue with move 731
-Issue with move 732
-Issue with move 733
-Issue with move 734
-Issue with move 735
-Issue with move 736
-Issue with move 737
-Issue with move 738
-Issue with move 739
-Issue with move 740
-Issue with move 741
-Issue with move 742
-Issue with move 743
-Issue with move 744
-Issue with move 745
-Issue with move 746
-Issue with move 747
-Issue with move 748
-Issue with move 749
-Issue with move 750
-Issue with move 751
-Issue with move 752
-Issue with move 753
-Issue with move 754
-Issue with move 755
-Issue with move 756
-Issue with move 757
-Issue with move 758
-Issue with move 759
-Issue with move 760
-Issue with move 761
-Issue with move 762
-Issue with move 763
-Issue with move 764
-Issue with move 765
-Issue with move 766
-Issue with move 767
-Issue with move 768
-Issue with move 769
-Issue with move 770
-Issue with move 771
-Issue with move 772
-Issue with move 773
-Issue with move 774
-Issue with move 775
-Issue with move 776
-Issue with move 777
-Issue with move 778
-Issue with move 779
-Issue with move 780
-Issue with move 781
-Issue with move 782
-Issue with move 783
-Issue with move 784
-Issue with move 785
-Issue with move 786
-Issue with move 787
-Issue with move 788
-Issue with move 789
-Issue with move 790
-Issue with move 791
-Issue with move 792
-Issue with move 793
-Issue with move 794
-Issue with move 795
-Issue with move 796
-Issue with move 797
-Issue with move 798
-Issue with move 799
-Issue with move 800
-Issue with move 801
-Issue with move 802
-Issue with move 803
-Issue with move 804
-Issue with move 805
-Issue with move 806
-Issue with move 807
-Issue with move 808
-Issue with move 809
-Issue with move 810
-Issue with move 811
-Issue with move 812
-Issue with move 813
-Issue with move 814
-Issue with move 815
-Issue with move 816
-Issue with move 817
-Issue with move 818
-Issue with move 819
-Issue with move 820
-Issue with move 821
-Issue with move 822
-Issue with move 823
-Issue with move 824
-Issue with move 825
-Issue with move 826
-Issue with move 827
-Issue with move 828
-Issue with move 829
-Issue with move 830
-Issue with move 831
-Issue with move 832
-Issue with move 833
-Issue with move 834
-Issue with move 835
-Issue with move 836
-Issue with move 837
-Issue with move 838
-Issue with move 839
-Issue with move 840
-Issue with move 841
-Issue with move 842
-Issue with move 843
-Issue with move 844
-Issue with move 845
-Issue with move 846
-Issue with move 847
-Issue with move 848
-Issue with move 849
-Issue with move 850
-Issue with move 851
-Issue with move 852
-Issue with move 853
-Issue with move 854
-Issue with move 855
-Issue with move 856
-Issue with move 857
-Issue with move 858
-Issue with move 859
-Issue with move 860
-Issue with move 861
-Issue with move 862
-Issue with move 863
-Issue with move 864
-Issue with move 865
-Issue with move 866
-Issue with move 867
-Issue with move 868
-Issue with move 869
-Issue with move 870
-Issue with move 871
-Issue with move 872
-Issue with move 873
-Issue with move 874
-Issue with move 875
-Issue with move 876
-Issue with move 877
-Issue with move 878
-Issue with move 879
-Issue with move 880
-Issue with move 881
-Issue with move 882
-Issue with move 883
-Issue with move 884
-Issue with move 885
-Issue with move 886
-Issue with move 887
-Issue with move 888
-Issue with move 889
-Issue with move 890
-Issue with move 891
-Issue with move 892
-Issue with move 893
-Issue with move 894
-Issue with move 895
-Issue with move 896
-Issue with move 897
-Issue with move 898
-Issue with move 899
-Issue with move 900
-Issue with move 901
-Issue with move 902
-Issue with move 903
-Issue with move 904
-Issue with move 905
-Issue with move 906
-Issue with move 907
-Issue with move 908
-Issue with move 909
-Issue with move 910
-Issue with move 911
-Issue with move 912
-Issue with move 913
-Issue with move 914
-Issue with move 915
-Issue with move 916
-Issue with move 917
-Issue with move 918
-Issue with move 919
+10001
+10002
+10003
+10004
+10005
+10006
+10007
+10008
+10009
+10010
+10011
+10012
+10013
+10014
+10015
+10016
+10017
+10018
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+591
+592
+593
+594
+595
+596
+597
+598
+599
+600
+601
+602
+603
+604
+605
+606
+607
+608
+609
+610
+611
+612
+613
+614
+615
+616
+617
+618
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674
+675
+676
+677
+678
+679
+680
+681
+682
+683
+684
+685
+686
+687
+688
+689
+690
+691
+692
+693
+694
+695
+696
+697
+698
+699
+700
+701
+702
+703
+704
+705
+706
+707
+708
+709
+710
+711
+712
+713
+714
+715
+716
+717
+718
+719
+720
+721
+722
+723
+724
+725
+726
+727
+728
+729
+730
+731
+732
+733
+734
+735
+736
+737
+738
+739
+740
+741
+742
+743
+744
+745
+746
+747
+748
+749
+750
+751
+752
+753
+754
+755
+756
+757
+758
+759
+760
+761
+762
+763
+764
+765
+766
+767
+768
+769
+770
+771
+772
+773
+774
+775
+776
+777
+778
+779
+780
+781
+782
+783
+784
+785
+786
+787
+788
+789
+790
+791
+792
+793
+794
+795
+796
+797
+798
+799
+800
+801
+802
+803
+804
+805
+806
+807
+808
+809
+810
+811
+812
+813
+814
+815
+816
+817
+818
+819
+820
+821
+822
+823
+824
+825
+826
+827
+828
+829
+830
+831
+832
+833
+834
+835
+836
+837
+838
+839
+840
+841
+842
+843
+844
+845
+846
+847
+848
+849
+850
+851
+852
+853
+854
+855
+856
+857
+858
+859
+860
+861
+862
+863
+864
+865
+866
+867
+868
+869
+870
+871
+872
+873
+874
+875
+876
+877
+878
+879
+880
+881
+882
+883
+884
+885
+886
+887
+888
+889
+890
+891
+892
+893
+894
+895
+896
+897
+898
+899
+900
+901
+902
+903
+904
+905
+906
+907
+908
+909
+910
+911
+912
+913
+914
+915
+916
+917
+918
+919
