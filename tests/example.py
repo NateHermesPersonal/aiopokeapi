@@ -39,9 +39,9 @@ async def samples():
                 # print(f"{generation.main_region}")
                 new = len(generation.pokemon_species)
                 for ability in generation.abilities:
-                    abilities.append(ability.name)
+                    # abilities.append(ability.name)
                     # abilities.append(ability.id)
-                    # abilities.append(f"{ability.name}({ability.id})")
+                    abilities.append(f"{ability.name}({ability.id})")
                 for move in generation.moves:
                     if not re.search("(special|physical)", move.name): # remove Z moves
                         moves.append(move.name)
@@ -85,6 +85,38 @@ async def write_moves():
         with open("output/movesByGen.txt", "w") as moveFile:
             moveFile.write("\n".join(moves))
         return moves
+
+async def write_abilities():
+    async with aiopoke.AiopokeClient() as client:
+        gen = 1
+        abilities = []
+        finished = False
+        while not finished:
+            try:
+                generation = await client.get_generation(gen)
+                for ability in generation.abilities:
+                    # moves.append(f"{move.name}")
+                    # moves.append(f"{move.id}")
+                    # moves.append(move)
+                    # dict = move.learned_by_pokemon
+                    abilities.append(f"{ability.name}")
+                gen += 1
+            except Exception as e:
+                finished = True
+            abilities.sort() # Alphabetize
+        with open("output/abilitiesByGen.txt", "w") as abilityFile:
+            abilityFile.write("\n".join(abilities))
+        return abilities
+
+async def read_missing_moves():
+    with open("input/missing_moves_114.txt", "r") as moveFile:
+        missingMoves = moveFile.read().splitlines()
+        print(f"{len(missingMoves)}")
+        
+async def read_missing_abilities():
+    with open("input/missing_abilities_13.txt", "r") as abilityFile:
+        missingAbilities = abilityFile.read().splitlines()
+        print(f"{len(missingAbilities)}")
 
 async def read_moves(movesList=None):
     async with aiopoke.AiopokeClient() as client:
@@ -147,10 +179,14 @@ async def tests():
 
 # asyncio.run(samples())
 # moves = asyncio.run(write_moves())
+# abilities = asyncio.run(write_abilities())
 # asyncio.run(read_moves(moves))
 # asyncio.run(old())
 
-asyncio.run(write_moves())
-asyncio.run(read_moves())
+# asyncio.run(write_moves())
+# asyncio.run(read_moves())
+
+# asyncio.run(read_missing_moves())
+asyncio.run(read_missing_abilities())
 
 # asyncio.run(tests())

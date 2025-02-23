@@ -1,0 +1,13 @@
+armor-tail
+costar
+flare-boost
+galvanize
+grass-pelt
+guard-dog
+ice-scales
+perish-body
+power-of-alchemy
+rocky-payload
+stalwart
+supreme-overlord
+toxic-boost
