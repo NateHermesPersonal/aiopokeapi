@@ -127,11 +127,23 @@ async def read_missing_moves():
                     missingMoveDict[p.name] = []
                     missingMoveDict[p.name].append(result.name)
                 pokemon.append(p.name)
-            if len(pokemon) == 0:
-                print(f"{result.name} - {len(pokemon)} Pokemon with this move")
+            # if len(pokemon) == 0:
+            #     print(f"{result.name} - {len(pokemon)} Pokemon with this move")
+        # print(f"{len(missingMoveDict.keys())}")
+        # print(f"{missingMoveDict["mew"]}")
         # for pok in missingMoveDict.keys():
         #     print(f"{pok} {len(missingMoveDict[pok])}")
-        print(f"{len(missingMoveDict.keys())}")
+        sortedMoves = dict(sorted(missingMoveDict.items(), key=lambda item: len(item[1]), reverse=True))
+        print(f"{len(missingMoves)} missing moves")
+        with open("output/sortedMoveDict.txt", "w") as sortedMoveFile:
+            for m in missingMoves:
+                for pok in sortedMoves.keys():
+                    if m in sortedMoves[pok]:
+                        sortedMoveFile.write(f"{m} - {pok}\n")
+                        break
+                else:
+                    sortedMoveFile.write(f"Could not find Pokemon for move {m}\n")
+                    print(f"Could not find Pokemon for move {m}")
         
 async def read_missing_abilities():
     async with aiopoke.AiopokeClient() as client:
