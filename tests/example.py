@@ -128,11 +128,14 @@ async def read_missing_moves():
             # if len(pokemon) == 0:
             #     print(f"{result.name} - {len(pokemon)} Pokemon with this move")
         # print(f"{len(missingMoveDict.keys())}")
-        # print(f"{missingMoveDict["mew"]}")
+        # print(f"{missingMoveDict["mew"]} ({len(missingMoveDict["mew"])})")
         # for pok in missingMoveDict.keys():
         #     print(f"{pok} {len(missingMoveDict[pok])}")
+        # sortedMoves = dict(sorted(missingMoveDict.items(), key=lambda item: len(item[1])))
         sortedMoves = dict(sorted(missingMoveDict.items(), key=lambda item: len(item[1]), reverse=True))
-        efficientDict = {} # FIXME consider that pokemon can have 4 moves, go through whole dictionary to see if move can go to a Pokemon with less than 4??
+        # for pok in sortedMoves.keys():
+        #     print(f"{pok} {len(sortedMoves[pok])}")
+        efficientDict = {} # FIXME consider that pokemon can have 4 moves, go through whole dictionary to see if move can go to a Pokemon with less than 4??  Want to do this before efficientDict?
         print(f"{len(missingMoves)} missing moves")
         with open("output/sortedMoveDict.txt", "w") as sortedMoveFile:
             for m in missingMoves:
@@ -150,6 +153,8 @@ async def read_missing_moves():
                     print(f"Could not find Pokemon for move {m}")
         # print(f"{efficientDict["mew"]}")
         # for mon in efficientDict.keys():
+        #     if len(efficientDict[mon]) >=4:
+        #         print(f"{mon} can learn {len(efficientDict[mon])} moves")
         #     print(f"{mon} - {",".join(efficientDict[mon])}")
         
 async def read_missing_abilities():
