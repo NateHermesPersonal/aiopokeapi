@@ -111,11 +111,9 @@ async def write_abilities():
 async def read_missing_moves():
     async with aiopoke.AiopokeClient() as client:
         missingMoveDict = {}
-        # missingMoveDict[pokemon] = []
         missingMoves = []
         with open("input/missing_moves_114.txt", "r") as moveFile:
             missingMoves = moveFile.read().splitlines()
-        # print(f"{len(missingMoves)}")
         tasks = [client.get_move(m) for m in missingMoves]
         results = await asyncio.gather(*tasks)
         for result in results:
@@ -134,16 +132,25 @@ async def read_missing_moves():
         # for pok in missingMoveDict.keys():
         #     print(f"{pok} {len(missingMoveDict[pok])}")
         sortedMoves = dict(sorted(missingMoveDict.items(), key=lambda item: len(item[1]), reverse=True))
+        efficientDict = {}
         print(f"{len(missingMoves)} missing moves")
         with open("output/sortedMoveDict.txt", "w") as sortedMoveFile:
             for m in missingMoves:
                 for pok in sortedMoves.keys():
                     if m in sortedMoves[pok]:
                         sortedMoveFile.write(f"{m} - {pok}\n")
+                        if pok in efficientDict:
+                            efficientDict[pok].append(m)
+                        else:
+                            efficientDict[pok] = []
+                            efficientDict[pok].append(m)
                         break
                 else:
                     sortedMoveFile.write(f"Could not find Pokemon for move {m}\n")
                     print(f"Could not find Pokemon for move {m}")
+        # print(f"{efficientDict["mew"]}")
+        # for mon in efficientDict.keys():
+        #     print(f"{mon} - {",".join(efficientDict[mon])}")
         
 async def read_missing_abilities():
     async with aiopoke.AiopokeClient() as client:
