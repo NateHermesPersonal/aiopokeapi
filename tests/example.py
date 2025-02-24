@@ -132,7 +132,7 @@ async def read_missing_moves():
         # for pok in missingMoveDict.keys():
         #     print(f"{pok} {len(missingMoveDict[pok])}")
         sortedMoves = dict(sorted(missingMoveDict.items(), key=lambda item: len(item[1]), reverse=True))
-        efficientDict = {}
+        efficientDict = {} # FIXME consider that pokemon can have 4 moves, go through whole dictionary to see if move can go to a Pokemon with less than 4??
         print(f"{len(missingMoves)} missing moves")
         with open("output/sortedMoveDict.txt", "w") as sortedMoveFile:
             for m in missingMoves:
