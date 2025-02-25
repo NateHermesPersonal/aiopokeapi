@@ -52,7 +52,7 @@ heal-order
 heart-swap
 hold-hands
 hyperspace-fury
-ice-beam
+ice-burn
 ion-deluge
 kinesis
 kings-shield
