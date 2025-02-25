@@ -116,6 +116,7 @@ async def read_missing_moves():
             missingMoves = moveFile.read().splitlines()
         tasks = [client.get_move(m) for m in missingMoves]
         results = await asyncio.gather(*tasks)
+        uniqueMons = {}
         for result in results:
             pokemon = []
             for p in result.learned_by_pokemon:
@@ -125,8 +126,17 @@ async def read_missing_moves():
                     missingMoveDict[p.name] = []
                     missingMoveDict[p.name].append(result.name)
                 pokemon.append(p.name)
+            if len(pokemon) == 1:
+                name = pokemon[0]
+                print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move ({name})")
+                if name not in uniqueMons:
+                    uniqueMons[name] = []
+                uniqueMons[name].append(result.name)
+        for mon in uniqueMons.keys():
+            if len(uniqueMons[mon]) > 1:
+                print(f"{mon} has multiple unique moves ({uniqueMons[mon]})")
             # if len(pokemon) == 0:
-            #     print(f"{result.name} - {len(pokemon)} Pokemon with this move")
+            #     print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move")
         # print(f"{len(missingMoveDict.keys())}")
         # print(f"{missingMoveDict["mew"]} ({len(missingMoveDict["mew"])})")
         # for pok in missingMoveDict.keys():
@@ -225,10 +235,10 @@ async def tests():
         # move = await client.get_move(13)
         # print(f"{move.name}")
         # move = await client.get_move(407)
-        move = await client.get_move("behemoth-bash")
-        move = await client.get_move("behemoth-blade")
-        move = await client.get_move("hold-hands")
-        print(f"{move.name}")
+        move = await client.get_move("ice-burn")
+        # move = await client.get_move("behemoth-blade")
+        # move = await client.get_move("hold-hands")
+        print(f"{move.learned_by_pokemon}")
 
 
 # asyncio.run(samples())
