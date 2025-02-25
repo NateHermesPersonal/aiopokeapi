@@ -10,7 +10,7 @@ Could not find Pokemon for move behemoth-bash
 Could not find Pokemon for move behemoth-blade
 bitter-blade - ceruledge
 blue-flare - reshiram
-bolt-beak - arctozolt
+bolt-beak - dracozolt
 bolt-strike - zekrom
 burning-jealousy - mew
 chilly-reception - slowking
@@ -22,7 +22,7 @@ corrosive-gas - mew
 court-change - cinderace
 defend-order - vespiquen
 dire-claw - sneasler
-dizzy-punch - crabominable
+dizzy-punch - reuniclus
 doodle - grafaiai
 doom-desire - jirachi
 double-shock - pawmot
@@ -52,8 +52,8 @@ heal-order - vespiquen
 heart-swap - magearna
 Could not find Pokemon for move hold-hands
 hyperspace-fury - hoopa-unbound
-ice-beam - mew
-ion-deluge - lanturn
+ice-burn - kyurem-white
+ion-deluge - pachirisu
 kinesis - kadabra
 kings-shield - aegislash-shield
 lash-out - mew
@@ -65,7 +65,7 @@ matcha-gotcha - sinistcha
 meteor-assault - sirfetchd
 meteor-beam - mew
 mind-blown - blacephalon
-miracle-eye - mewtwo
+miracle-eye - meowstic-male
 mist-ball - latias
 misty-explosion - mew
 mortal-spin - glimmora
@@ -108,7 +108,7 @@ temper-flare - mew
 thousand-waves - zygarde-50
 tidy-up - minccino
 triple-axel - mew
-triple-kick - pheromosa
+triple-kick - hitmontop
 trop-kick - tsareena
 twin-beam - girafarig
 upper-hand - mew
