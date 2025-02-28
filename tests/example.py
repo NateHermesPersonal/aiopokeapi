@@ -112,7 +112,7 @@ async def read_missing_moves():
     async with aiopoke.AiopokeClient() as client:
         missingMoveDict = {}
         missingMoves = []
-        with open("input/missing_moves_114.txt", "r") as moveFile:
+        with open("input/missing_moves.txt", "r") as moveFile:
             missingMoves = moveFile.read().splitlines()
         tasks = [client.get_move(m) for m in missingMoves]
         results = await asyncio.gather(*tasks)
