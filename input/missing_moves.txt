@@ -1,6 +1,5 @@
 alluring-voice
 anchor-shot
-armor-cannon
 astral-barrage
 aura-wheel
 axe-kick
@@ -8,7 +7,6 @@ baneful-bunker
 beak-blast
 behemoth-bash
 behemoth-blade
-bitter-blade
 blue-flare
 bolt-beak
 bolt-strike
