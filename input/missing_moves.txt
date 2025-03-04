@@ -40,7 +40,6 @@ frenzy-plant
 frustration
 gear-up
 glacial-lance
-glaciate
 glaive-rush
 grass-pledge
 grassy-glide
@@ -48,7 +47,6 @@ hard-press
 head-charge
 heal-order
 heart-swap
-hold-hands
 hyperspace-fury
 ice-burn
 ion-deluge
