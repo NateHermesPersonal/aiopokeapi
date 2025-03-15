@@ -250,7 +250,7 @@ async def tests():
 # asyncio.run(write_moves())
 # asyncio.run(read_moves())
 
-asyncio.run(read_missing_moves())
-# asyncio.run(read_missing_abilities())
+# asyncio.run(read_missing_moves())
+asyncio.run(read_missing_abilities())
 
 # asyncio.run(tests())
