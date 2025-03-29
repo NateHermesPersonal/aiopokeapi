@@ -323,17 +323,6 @@ async def find_mons_of_type():
                 else:
                     matches.append(pokemon.name)
         print(f"The following pokemon match types {choice} and {choice2}: {matches}")
-                # for type in pokemon.types:
-                    # types = []
-                    # print(f"{type.type.name}")
-                    # if type.type.name == choice:
-                    #     print("match")
-        
-
-        pik = await client.get_pokemon_species(25) # pokemon species has varieties, each of which is a pokemon (which have name and id)
-        libre = await client.get_pokemon('pikachu-libre')
-        print("")
-
 
 # asyncio.run(samples())
 # moves = asyncio.run(write_moves())
