@@ -4,6 +4,25 @@ import aiopoke
 import re
 # sys.path.append('C:/Users/nated/Documents/Github/aiopokeapi/src/aiopoke')
 
+types = ["Normal",
+        "Fire",
+        "fighting",
+        "Water",
+        "Flying",
+        "Grass",
+        "Poison",
+        "Electric",
+        "Ground",
+        "Psychic",
+        "Rock",
+        "Ice",
+        "Bug",
+        "Dragon",
+        "Ghost",
+        "Dark",
+        "Steel",
+        "Fairy"]
+
 async def old():
     client = aiopoke.AiopokeClient()
     move = await client.get_move(13)
@@ -240,6 +259,81 @@ async def tests():
         # move = await client.get_move("hold-hands")
         print(f"{move.learned_by_pokemon}")
 
+def select_type():
+    selectedType = None
+    while True:
+        i = 0
+        while(i < len(types)):
+            print(f"{i} - {types[i]}")
+            i += 1
+        selectedType = input("Enter the number next to the type to search for\n")
+        selectedType = int(selectedType)
+        try:
+            types[selectedType]
+            break
+        except:
+            print("Invalid input, please enter a valid type")
+    return selectedType
+
+async def find_mons_of_type():
+    async with aiopoke.AiopokeClient() as client:
+        choice = select_type()
+        choice2 = None
+        while True:
+            anotherType = input(f"Do you want to combine type {types[choice]} with another type? (y/n)\n")
+            if anotherType == "y":
+                choice2 = select_type()
+                break
+            elif anotherType == "n":
+                break
+            else:
+                print("Invalid input, please enter 'y' or 'n'")
+        choice = types[choice].lower()
+        if choice2 and choice != choice2:
+            choice2 = types[choice2].lower()
+            print(f"Will search for combination of types {choice} and {choice2}")
+        else:
+            print(f"Will search for type {choice}")
+        
+        gen = 1
+        pokemonSpecies = []
+        while True:
+            try:
+                generation = await client.get_generation(gen)
+                pokemonSpecies.extend( [species.id for species in generation.pokemon_species] )
+                gen += 1
+            except Exception as e:
+                break
+        
+        tasks = [client.get_pokemon_species(s) for s in pokemonSpecies]
+        speciesList = await asyncio.gather(*tasks)
+        varietyList = []
+        for s in speciesList:
+            varietyList.extend( [v.pokemon.name for v in s.varieties] )
+        tasks2 = [client.get_pokemon(v) for v in varietyList]
+        pokemonList = await asyncio.gather(*tasks2)
+        matches = []
+        for pokemon in pokemonList:
+            pokemonTypes = [type.type.name for type in pokemon.types]
+            # print(f"Types for {pokemon.name}: {pokemonTypes}")
+            if choice in pokemonTypes:
+                if choice2:
+                    if choice2 in pokemonTypes:
+                        matches.append(pokemon.name)
+                else:
+                    matches.append(pokemon.name)
+        print(f"The following pokemon match types {choice} and {choice2}: {matches}")
+                # for type in pokemon.types:
+                    # types = []
+                    # print(f"{type.type.name}")
+                    # if type.type.name == choice:
+                    #     print("match")
+        
+
+        pik = await client.get_pokemon_species(25) # pokemon species has varieties, each of which is a pokemon (which have name and id)
+        libre = await client.get_pokemon('pikachu-libre')
+        print("")
+
 
 # asyncio.run(samples())
 # moves = asyncio.run(write_moves())
@@ -251,6 +345,7 @@ async def tests():
 # asyncio.run(read_moves())
 
 # asyncio.run(read_missing_moves())
-asyncio.run(read_missing_abilities())
+# asyncio.run(read_missing_abilities())
+asyncio.run(find_mons_of_type())
 
 # asyncio.run(tests())
