@@ -1,27 +1,28 @@
+from kivy.uix.gridlayout import islice
 # import sys
 import asyncio
 import aiopoke
 import re
 # sys.path.append('C:/Users/nated/Documents/Github/aiopokeapi/src/aiopoke')
 
-types = ["Normal",
-        "Fire",
+types = ["normal",
+        "fire",
         "fighting",
-        "Water",
-        "Flying",
-        "Grass",
-        "Poison",
-        "Electric",
-        "Ground",
-        "Psychic",
-        "Rock",
-        "Ice",
-        "Bug",
-        "Dragon",
-        "Ghost",
-        "Dark",
-        "Steel",
-        "Fairy"]
+        "water",
+        "flying",
+        "grass",
+        "poison",
+        "electric",
+        "ground",
+        "psychic",
+        "rock",
+        "ice",
+        "bug",
+        "dragon",
+        "ghost",
+        "dark",
+        "ateel",
+        "fairy"]
 
 async def old():
     client = aiopoke.AiopokeClient()
@@ -254,10 +255,13 @@ async def tests():
         # move = await client.get_move(13)
         # print(f"{move.name}")
         # move = await client.get_move(407)
-        move = await client.get_move("ice-burn")
+        # move = await client.get_move("ice-burn")
         # move = await client.get_move("behemoth-blade")
         # move = await client.get_move("hold-hands")
-        print(f"{move.learned_by_pokemon}")
+        # print(f"{move.learned_by_pokemon}")
+        pokemon = await client.get_pokemon(25)
+        type = await client.get_type(pokemon.types[0].type.name)
+        print("")
 
 def select_type():
     selectedType = None
@@ -275,6 +279,35 @@ def select_type():
             print("Invalid input, please enter a valid type")
     return selectedType
 
+def calculate_damage(type):
+    pass
+
+def print_damage_relation(type, type2=None):
+    relationDict = {}
+    relationDict["double_damage_from"] = {"multiplier":2,"types":[]}
+    relationDict["double_damage_to"] = {"multiplier":2,"types":[]}
+    relationDict["half_damage_from"] = {"multiplier":.5,"types":[]}
+    relationDict["half_damage_to"] = {"multiplier":.5,"types":[]}
+    relationDict["no_damage_from"] = {"multiplier":0,"types":[]}
+    relationDict["no_damage_to"] = {"multiplier":0,"types":[]}
+
+    # these are not in damage_relation, and should be the default if a type is not found in another relation
+    relationDict["normal_damage_from"] = {"multiplier":1,"types":[]}
+    relationDict["normal_damage_to"] = {"multiplier":1,"types":[]}
+
+    # multipliy if any duplicate types in same dict entry
+    # then multiply if duplicate types in dict as a whole
+    # damage_to is for move type, so should be part of something else?
+
+    inputTypes = [type, type2] if type2 else [type]
+    for ty in inputTypes:
+        for relation in relationDict.keys():
+            rel = "does" if re.search("to", relation) else "takes"
+            typeRelation = getattr(ty.damage_relations, relation)
+            typeNames = [relationType.name for relationType in typeRelation]
+            if typeNames:
+                print(f"{ty.name} {rel} {relation} {','.join(typeNames)}\n")
+
 async def find_mons_of_type():
     async with aiopoke.AiopokeClient() as client:
         choice = select_type()
@@ -288,9 +321,9 @@ async def find_mons_of_type():
                 break
             else:
                 print("Invalid input, please enter 'y' or 'n'")
-        choice = types[choice].lower()
+        choice = types[choice]
         if choice2 and choice != choice2:
-            choice2 = types[choice2].lower()
+            choice2 = types[choice2]
             print(f"Will search for combination of types {choice} and {choice2}")
         else:
             print(f"Will search for type {choice}")
@@ -322,7 +355,11 @@ async def find_mons_of_type():
                         matches.append(pokemon.name)
                 else:
                     matches.append(pokemon.name)
-        print(f"The following pokemon match types {choice} and {choice2}: {matches}")
+        print(f"The following pokemon match types {choice} and {choice2}: {matches}\n")
+        type1 = await client.get_type(choice)
+        type2 = await client.get_type(choice2) if choice2 else None
+        print_damage_relation(type1,type2)
+        # type1 = await client.get_type("ice")
 
 # asyncio.run(samples())
 # moves = asyncio.run(write_moves())
