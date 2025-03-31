@@ -284,16 +284,18 @@ def calculate_damage(type):
 
 def print_damage_relation(type, type2=None):
     relationDict = {}
-    relationDict["double_damage_from"] = {"multiplier":2,"types":[]}
-    relationDict["double_damage_to"] = {"multiplier":2,"types":[]}
-    relationDict["half_damage_from"] = {"multiplier":.5,"types":[]}
-    relationDict["half_damage_to"] = {"multiplier":.5,"types":[]}
-    relationDict["no_damage_from"] = {"multiplier":0,"types":[]}
-    relationDict["no_damage_to"] = {"multiplier":0,"types":[]}
+    relationDict["TO"] = {}
+    relationDict["TO"]["double_damage_to"] = {"multiplier":2,"types":[]}
+    relationDict["TO"]["half_damage_to"] = {"multiplier":.5,"types":[]}
+    relationDict["TO"]["no_damage_to"] = {"multiplier":0,"types":[]}
+    relationDict["FROM"] = {}
+    relationDict["FROM"]["double_damage_from"] = {"multiplier":2,"types":[]}
+    relationDict["FROM"]["half_damage_from"] = {"multiplier":.5,"types":[]}
+    relationDict["FROM"]["no_damage_from"] = {"multiplier":0,"types":[]}
 
     # these are not in damage_relation, and should be the default if a type is not found in another relation
-    relationDict["normal_damage_from"] = {"multiplier":1,"types":[]}
-    relationDict["normal_damage_to"] = {"multiplier":1,"types":[]}
+    relationDict["TO"]["normal_damage_to"] = {"multiplier":1,"types":[]}
+    relationDict["FROM"]["normal_damage_from"] = {"multiplier":1,"types":[]}
 
     # multipliy if any duplicate types in same dict entry
     # then multiply if duplicate types in dict as a whole
@@ -301,7 +303,9 @@ def print_damage_relation(type, type2=None):
 
     inputTypes = [type, type2] if type2 else [type]
     for ty in inputTypes:
-        for relation in relationDict.keys():
+        for relation in relationDict["FROM"].keys():
+            if re.search("normal", relation):
+                continue
             rel = "does" if re.search("to", relation) else "takes"
             typeRelation = getattr(ty.damage_relations, relation)
             typeNames = [relationType.name for relationType in typeRelation]
