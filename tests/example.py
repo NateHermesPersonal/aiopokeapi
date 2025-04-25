@@ -24,6 +24,8 @@ types = ["normal",
         "ateel",
         "fairy"]
 
+evolutions = []
+
 async def old():
     client = aiopoke.AiopokeClient()
     move = await client.get_move(13)
@@ -259,9 +261,47 @@ async def tests():
         # move = await client.get_move("behemoth-blade")
         # move = await client.get_move("hold-hands")
         # print(f"{move.learned_by_pokemon}")
-        pokemon = await client.get_pokemon(25)
-        type = await client.get_type(pokemon.types[0].type.name)
+        pokemon = await client.get_pokemon_species(25)
         print("")
+
+async def get_evo_chains():
+    async with aiopoke.AiopokeClient() as client:
+        chains = []
+        for c in range(1,500):
+            try:
+                chain = await client.get_evolution_chain(c)
+                # chains.append(chain)
+                process_evolution_chain(chain.chain)
+            except:
+                # print(f"no chain {c}")
+                continue
+        # tasks = [client.get_evolution_chain(c) for c in range(1,550)]
+        # chains = await asyncio.gather(*tasks)
+        # for chain in chains:
+        #     process_evolution_chain(chain.chain)
+        for i in range(1030):
+            if i not in evolutions:
+                print(f"{i}")
+        # with open("output/evolutions.txt", "w") as evolutionFile:
+        #     evolutionFile.write("\n".join(evolutions))
+        # for i in range(1,10):
+        #     chain = await client.get_evolution_chain(i)
+            
+        #     print(chain)
+        # type = await client.get_type(pokemon.types[0].type.name)
+        # evoChain = await client.get_evolution_chain(550)
+        # process_evolution_chain(evoChain.chain)
+        print("done")
+
+def process_evolution_chain(evolutionChain):
+    evolutions.append(evolutionChain.species.id)
+    # evolutions.append(f"{evolutionChain.species.id}")
+    # evolutions.append(f"{evolutionChain.species.id}-{evolutionChain.species.name}")
+    # print(evolutionChain.species.name)
+    if len(evolutionChain.evolves_to) > 0:
+        for e in evolutionChain.evolves_to:
+            process_evolution_chain(e)
+    # print("done")
 
 def select_type():
     selectedType = None
@@ -376,6 +416,7 @@ async def find_mons_of_type():
 
 # asyncio.run(read_missing_moves())
 # asyncio.run(read_missing_abilities())
-asyncio.run(find_mons_of_type())
+# asyncio.run(find_mons_of_type())
 
+asyncio.run(get_evo_chains())
 # asyncio.run(tests())
