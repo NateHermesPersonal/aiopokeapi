@@ -1,12 +1,7 @@
 alluring-voice
 anchor-shot
-astral-barrage
 aura-wheel
 axe-kick
-baneful-bunker
-beak-blast
-behemoth-bash
-behemoth-blade
 blue-flare
 bolt-beak
 bolt-strike
@@ -34,12 +29,9 @@ fillet-away
 fire-pledge
 floral-healing
 flower-shield
-flower-trick
-freeze-shock
 frenzy-plant
 frustration
 gear-up
-glacial-lance
 glaive-rush
 grass-pledge
 grassy-glide
@@ -48,7 +40,6 @@ head-charge
 heal-order
 heart-swap
 hyperspace-fury
-ice-burn
 ion-deluge
 kinesis
 kings-shield
@@ -77,7 +68,6 @@ psychic-terrain
 rage-fist
 raging-bull
 rototiller
-scale-shot
 searing-shot
 shadow-bone
 shed-tail
@@ -106,5 +96,4 @@ tidy-up
 triple-axel
 triple-kick
 trop-kick
-twin-beam
 upper-hand
