@@ -25,6 +25,7 @@ types = ["normal",
         "fairy"]
 
 evolutions = []
+nonEvolutions = []
 
 async def old():
     client = aiopoke.AiopokeClient()
@@ -273,19 +274,23 @@ async def get_evo_chains():
             try:
                 chain = await client.get_evolution_chain(c)
                 # chains.append(chain)
-                process_evolution_chain(chain.chain)
+                if len(chain.chain.evolves_to) > 0:
+                    process_evolution_chain(chain.chain)
+                else:
+                    nonEvolutions.append(str(chain.chain.species.id))
+                    # print(chain.chain.species.id)
             except:
                 # print(f"no chain {c}")
                 continue
         # for chain in chains:
         #     process_evolution_chain(chain.chain)
-        for i in range(1030): # all pokemon, plus a few
-            if i not in evolutions: # missing a few, for some reason
+        # for i in range(1030): # all pokemon, plus a few
+        #     if i not in evolutions: # missing a few, for some reason
                 # evolutions.append(i)
-                print(f"{i}")
+                # print(f"{i}")
         # with open("output/evolutions.txt", "w") as evolutionFile:
         #     evolutionFile.write("\n".join(evolutions))
-
+        print(','.join(nonEvolutions))
         print("done")
 
 def process_evolution_chain(evolutionChain):
@@ -296,6 +301,8 @@ def process_evolution_chain(evolutionChain):
     if len(evolutionChain.evolves_to) > 0:
         for e in evolutionChain.evolves_to:
             process_evolution_chain(e)
+    # else:
+    #     print(evolutionChain.species.id)
     # print("done")
 
 def select_type():

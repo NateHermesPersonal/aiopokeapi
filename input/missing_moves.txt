@@ -16,13 +16,11 @@ court-change
 defend-order
 dire-claw
 dizzy-punch
-doodle
 doom-desire
 double-shock
 electrify
 electro-shot
 expanding-force
-fairy-lock
 fickle-beam
 fiery-dance
 fillet-away
@@ -32,7 +30,6 @@ flower-shield
 frenzy-plant
 frustration
 gear-up
-glaive-rush
 grass-pledge
 grassy-glide
 hard-press
@@ -58,14 +55,12 @@ misty-explosion
 mortal-spin
 obstruct
 octolock
-overdrive
 photon-geyser
 population-bomb
 powder
 prismatic-laser
 psychic-noise
 psychic-terrain
-rage-fist
 raging-bull
 rototiller
 searing-shot
