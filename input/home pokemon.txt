@@ -1,0 +1,33 @@
+home pokemon:
+vespiquen: defend-order, frustration, heal-order, psychic-noise
+dhelmise: anchor-shot, grassy-glide, solar-blade, steel-roller
+reshiram: blue-flare
+zekrom: bolt-strike
+kommo-o: clanging-scales, clangorous-soul, sky-uppercut, upper-hand
+cinderace: burning-jealousy, court-change, fire-pledge, temper-flare
+sneasler: coaching, dire-claw, lash-out
+jirachi: doom-desire, expanding-force, meteor-beam
+pawmot: double-shock
+archaludon(stalwart): electro-shot, hard-press
+hydrapple: fickle-beam, syrup-bomb
+veluza: fillet-away, psychic-terrain
+comfey: alluring-voice, floral-healing, flower-shield
+bouffalant: head-charge, smart-strike
+hoopa-unbound: hyperspace-fury
+cresselia: lunar-dance
+hatterene: magic-powder, misty-explosion
+gholdengo: make-it-rain
+sinistcha: matcha-gotcha
+sirfetchd: meteor-assault
+blacephalon: mind-blown
+glimmora: mortal-spin, spiky-shield
+obstagoon: obstruct
+grapploct: octolock
+victini: searing-shot, speed-swap
+spidops: silk-trap
+stunfisk-galar: snap-trap
+scovillain: spicy-extract
+weezing-galar: corrosive-gas, strange-steam
+coalossal: tar-shot
+polteageist: teatime
+tsareena: triple-axel, trop-kick

@@ -1,3 +1,5 @@
+from collections import Counter, defaultdict
+
 from kivy.uix.gridlayout import islice
 # import sys
 import asyncio
@@ -134,6 +136,7 @@ async def write_abilities():
 async def read_missing_moves():
     async with aiopoke.AiopokeClient() as client:
         missingMoveDict = {}
+        pokemonMoves = {}
         missingMoves = []
         with open("input/missing_moves.txt", "r") as moveFile:
             missingMoves = moveFile.read().splitlines()
@@ -150,17 +153,53 @@ async def read_missing_moves():
                     missingMoveDict[p.name].append(result.name)
                 pokemon.append(p.name)
             if len(pokemon) == 1:
+                pokemonMoves[result.name] = pokemon
                 name = pokemon[0]
                 print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move ({name})")
                 if name not in uniqueMons:
                     uniqueMons[name] = []
                 uniqueMons[name].append(result.name)
-            else:
+            else: # non-unique moves
                 # print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move ({','.join(pokemon)})")
-                print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move")
+                # print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move")
+                pokemonMoves[result.name] = pokemon
         for mon in uniqueMons.keys():
             if len(uniqueMons[mon]) > 1:
-                print(f"{mon} has multiple unique moves ({uniqueMons[mon]})")
+                print(f"{mon} has multiple unique moves ({uniqueMons[mon]})\n\n")
+
+        # all_pokemon = [p for pokemon_list in pokemonMoves.values() for p in pokemon_list]
+        # counts = Counter(all_pokemon)
+        # multi_move_pokemon = {p: count for p, count in counts.items() if count > 1}
+        # print(multi_move_pokemon)
+
+        # Build a reverse mapping: Pokemon -> list of moves
+        pokemon_moves = defaultdict(list)
+        for move, pokemon_list in pokemonMoves.items():
+            for pokemon in pokemon_list:
+                pokemon_moves[pokemon].append(move)
+
+        # Filter for Pokemon that learn multiple moves and sort their moves alphabetically
+        multi_move_pokemon = {
+            pokemon: sorted(move_list) 
+            for pokemon, move_list in pokemon_moves.items() 
+            if len(move_list) > 1
+        }
+
+        # Print the results in a readable format
+        # for pokemon, move_list in sorted(multi_move_pokemon.items()):  # Sort Pokemon alphabetically
+        #     print(f"{pokemon}: {', '.join(move_list)}")
+
+        # Sort by: number of moves DESCENDING, then by name ASCENDING
+        sorted_pokemon = sorted(
+            multi_move_pokemon.items(),
+            key=lambda item: (-len(item[1]), item[0])   # -len for descending order
+        )
+
+        for pokemon, move_list in sorted_pokemon:
+            if pokemon == "mew": # skip mew for now
+                continue
+            print(f"{pokemon}: {', '.join(move_list)}")
+
             # if len(pokemon) == 0:
             #     print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move")
         # print(f"{len(missingMoveDict.keys())}")
@@ -172,21 +211,21 @@ async def read_missing_moves():
         # for pok in sortedMoves.keys():
         #     print(f"{pok} {len(sortedMoves[pok])}")
         efficientDict = {} # FIXME consider that pokemon can have 4 moves, go through whole dictionary to see if move can go to a Pokemon with less than 4??  Want to do this before efficientDict?
-        print(f"{len(missingMoves)} missing moves")
-        with open("output/sortedMoveDict.txt", "w") as sortedMoveFile:
-            for m in missingMoves:
-                for pok in sortedMoves.keys():
-                    if m in sortedMoves[pok]:
-                        sortedMoveFile.write(f"{m} - {pok}\n")
-                        if pok in efficientDict:
-                            efficientDict[pok].append(m)
-                        else:
-                            efficientDict[pok] = []
-                            efficientDict[pok].append(m)
-                        break
-                else:
-                    sortedMoveFile.write(f"Could not find Pokemon for move {m}\n")
-                    print(f"Could not find Pokemon for move {m}")
+        print(f"{len(missingMoves)} total missing moves")
+        # with open("output/sortedMoveDict.txt", "w") as sortedMoveFile:
+        #     for m in missingMoves:
+        #         for pok in sortedMoves.keys():
+        #             if m in sortedMoves[pok]:
+        #                 sortedMoveFile.write(f"{m} - {pok}\n")
+        #                 if pok in efficientDict:
+        #                     efficientDict[pok].append(m)
+        #                 else:
+        #                     efficientDict[pok] = []
+        #                     efficientDict[pok].append(m)
+        #                 break
+        #         else:
+        #             sortedMoveFile.write(f"Could not find Pokemon for move {m}\n")
+        #             print(f"Could not find Pokemon for move {m}")
         # print(f"{efficientDict["mew"]}")
         # for mon in efficientDict.keys():
         #     if len(efficientDict[mon]) >=4:
