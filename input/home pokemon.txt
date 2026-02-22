@@ -8,7 +8,6 @@ cinderace: burning-jealousy, court-change, fire-pledge, temper-flare
 sneasler: coaching, dire-claw, lash-out
 jirachi: doom-desire, expanding-force, meteor-beam
 pawmot: double-shock
-archaludon(stalwart): electro-shot, hard-press
 hydrapple: fickle-beam, syrup-bomb
 veluza: fillet-away, psychic-terrain
 comfey: alluring-voice, floral-healing, flower-shield

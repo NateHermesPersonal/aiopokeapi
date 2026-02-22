@@ -19,7 +19,6 @@ dizzy-punch
 doom-desire
 double-shock
 electrify
-electro-shot
 expanding-force
 fickle-beam
 fiery-dance
@@ -32,7 +31,6 @@ frustration
 gear-up
 grass-pledge
 grassy-glide
-hard-press
 head-charge
 heal-order
 heart-swap

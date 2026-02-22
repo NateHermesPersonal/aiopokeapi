@@ -235,7 +235,7 @@ async def read_missing_moves():
 async def read_missing_abilities():
     async with aiopoke.AiopokeClient() as client:
         missingAbilities = []
-        with open("input/missing_abilities_13.txt", "r") as abilityFile:
+        with open("input/missing_abilities.txt", "r") as abilityFile:
             missingAbilities = abilityFile.read().splitlines()
         # print(f"{len(missingAbilities)}")
         tasks = [client.get_ability(a) for a in missingAbilities]
@@ -458,8 +458,8 @@ async def find_mons_of_type():
 # asyncio.run(write_moves())
 # asyncio.run(read_moves())
 
-# asyncio.run(read_missing_moves())
-asyncio.run(read_missing_abilities())
+asyncio.run(read_missing_moves())
+# asyncio.run(read_missing_abilities())
 # asyncio.run(find_mons_of_type())
 
 # asyncio.run(get_evo_chains())
