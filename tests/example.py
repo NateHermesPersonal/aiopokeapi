@@ -155,6 +155,9 @@ async def read_missing_moves():
                 if name not in uniqueMons:
                     uniqueMons[name] = []
                 uniqueMons[name].append(result.name)
+            else:
+                # print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move ({','.join(pokemon)})")
+                print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move")
         for mon in uniqueMons.keys():
             if len(uniqueMons[mon]) > 1:
                 print(f"{mon} has multiple unique moves ({uniqueMons[mon]})")
@@ -417,8 +420,8 @@ async def find_mons_of_type():
 # asyncio.run(read_moves())
 
 # asyncio.run(read_missing_moves())
-# asyncio.run(read_missing_abilities())
+asyncio.run(read_missing_abilities())
 # asyncio.run(find_mons_of_type())
 
-asyncio.run(get_evo_chains())
+# asyncio.run(get_evo_chains())
 # asyncio.run(tests())
