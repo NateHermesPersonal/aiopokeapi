@@ -152,6 +152,7 @@ async def read_missing_moves():
                 cutMovesList.append(f"{result.name} ({result.generation.id})")
             pokemon = []
             for p in result.learned_by_pokemon:
+                # pok = await client.get_pokemon(p.id)
                 if f"{p.name}" in missingMoveDict:
                     missingMoveDict[p.name].append(result.name)
                 else:
@@ -159,7 +160,8 @@ async def read_missing_moves():
                     missingMoveDict[p.name].append(result.name)
                 pokemon.append(p.name)
             # print(f"{result.name} ({result.generation.id})")
-            pokemonMoves[f"{result.name} ({result.generation.id})"] = pokemon
+            if int(result.generation.id) < 8: # focus on pre-Switch moves for now
+                pokemonMoves[f"{result.name} ({result.generation.id})"] = pokemon
             if len(pokemon) == 1:
                 name = pokemon[0]
                 print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move ({name})")
@@ -207,6 +209,28 @@ async def read_missing_moves():
                 continue
             print(f"{pokemon}: {', '.join(move_list)}")
         print(f"The following moves are cut from Switch games: {', '.join(cutMovesList)}")
+        cutMovesDict = {}
+        for move in cutMovesList:
+            print(f"{move}:{pokemonMoves[move]}")
+            cutMovesDict[move] = pokemonMoves[move]
+        
+        # Count how many moves each Pokémon learns
+        pokemon_move_count = defaultdict(int)
+
+        for move, learners in cutMovesDict.items():
+            for pokemon in set(learners):  # avoid counting duplicates within same move
+                pokemon_move_count[pokemon] += 1
+
+        # Filter those with multiple moves
+        multi_move_pokemon = {
+            pokemon: count 
+            for pokemon, count in pokemon_move_count.items() 
+            if count >= 2
+        }
+
+        # Print nicely
+        for pokemon, count in sorted(multi_move_pokemon.items(), key=lambda x: -x[1]):
+            print(f"{pokemon:12} learns {count} moves")
 
             # if len(pokemon) == 0:
             #     print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move")
