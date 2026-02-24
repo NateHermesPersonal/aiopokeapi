@@ -152,17 +152,18 @@ async def read_missing_moves():
                     missingMoveDict[p.name] = []
                     missingMoveDict[p.name].append(result.name)
                 pokemon.append(p.name)
+            # print(f"{result.name} ({result.generation.id})")
+            pokemonMoves[f"{result.name} ({result.generation.id})"] = pokemon
             if len(pokemon) == 1:
-                pokemonMoves[result.name] = pokemon
                 name = pokemon[0]
                 print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move ({name})")
                 if name not in uniqueMons:
                     uniqueMons[name] = []
                 uniqueMons[name].append(result.name)
-            else: # non-unique moves
+            # else: # non-unique moves
                 # print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move ({','.join(pokemon)})")
                 # print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move")
-                pokemonMoves[result.name] = pokemon
+                # pokemonMoves[result.name] = pokemon
         for mon in uniqueMons.keys():
             if len(uniqueMons[mon]) > 1:
                 print(f"{mon} has multiple unique moves ({uniqueMons[mon]})\n\n")
