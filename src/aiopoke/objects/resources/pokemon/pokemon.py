@@ -32,6 +32,7 @@ if TYPE_CHECKING:
 class Pokemon(NamedResource):
     abilities: List["PokemonAbility"]
     base_experience: int
+    cries: "PokemonCries"
     forms: List[MinimalResource["PokemonForm"]]
     game_indices: List["VersionGameIndex"]
     held_items: List["PokemonHeldItem"]
@@ -41,6 +42,7 @@ class Pokemon(NamedResource):
     moves: List["PokemonMove"]
     order: int
     past_abilities: List["PastAbility"]
+    past_stats: List["PastStat"]
     past_types: List["PastType"]
     species: MinimalResource["PokemonSpecies"]
     sprites: "Sprites"
@@ -55,7 +57,7 @@ class Pokemon(NamedResource):
         name: str,
         abilities: List[Dict[str, Any]],
         base_experience: int,
-        cries: Dict[str, str],
+        cries: Dict[str, Any],
         forms: List[Dict[str, Any]],
         game_indices: List[Dict[str, Any]],
         height: int,
@@ -65,6 +67,7 @@ class Pokemon(NamedResource):
         moves: List[Dict[str, Any]],
         order: int,
         past_abilities: List[Dict[str, Any]],
+        past_stats: List[Dict[str, Any]],
         past_types: List[Dict[str, Any]],
         species: Dict[str, Any],
         sprites: Dict[str, Any],
@@ -75,6 +78,7 @@ class Pokemon(NamedResource):
         super().__init__(id=id, name=name)
         self.abilities = [PokemonAbility(**ability) for ability in abilities]
         self.base_experience = base_experience
+        self.cries = PokemonCries(**cries)
         self.forms = [MinimalResource(**form) for form in forms]
         self.game_indices = [
             VersionGameIndex(**game_index) for game_index in game_indices
@@ -88,7 +92,10 @@ class Pokemon(NamedResource):
         ]
         self.moves = [PokemonMove(**move) for move in moves]
         self.order = order
-        self.past_abilities = [PastAbility(**past_ability) for past_ability in past_abilities]
+        self.past_abilities = [
+            PastAbility(**past_ability) for past_ability in past_abilities
+        ]
+        self.past_stats = [PastStat(**past_stat) for past_stat in past_stats]
         self.past_types = [PastType(**past_type) for past_type in past_types]
         self.species = MinimalResource(**species)
         self.sprites = Sprites(sprites)
@@ -100,7 +107,7 @@ class Pokemon(NamedResource):
 class PokemonAbility(Resource):
     is_hidden: bool
     slot: int
-    ability: MinimalResource["Ability"]
+    ability: Optional[MinimalResource["Ability"]]
 
     def __init__(
         self,
@@ -111,7 +118,7 @@ class PokemonAbility(Resource):
     ) -> None:
         self.is_hidden = is_hidden
         self.slot = slot
-        self.ability = MinimalResource(**ability)
+        self.ability = MinimalResource(**ability) if ability is not None else None
 
 
 class PokemonCries(Resource):
@@ -223,9 +230,22 @@ class PastAbility(Resource):
     abilities: List["PokemonAbility"]
     generation: MinimalResource["Generation"]
 
-    def __init__(self, *, abilities: List[Dict[str, Any]], generation: Dict[str, Any]) -> None:
+    def __init__(
+        self, *, abilities: List[Dict[str, Any]], generation: Dict[str, Any]
+    ) -> None:
         self.ability = [PokemonAbility(**ability) for ability in abilities]
         self.generation = MinimalResource(**generation)
+
+
+class PastStat(Resource):
+    generation: MinimalResource["Generation"]
+    stats: List["PokemonStat"]
+
+    def __init__(
+        self, *, generation: Dict[str, Any], stats: List[Dict[str, Any]]
+    ) -> None:
+        self.generation = MinimalResource(**generation)
+        self.stats = [PokemonStat(**stat) for stat in stats]
 
 
 class PastType(Resource):

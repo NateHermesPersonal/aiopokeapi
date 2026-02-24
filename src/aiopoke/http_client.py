@@ -9,10 +9,12 @@ from aiohttp import ClientSession
 class HttpClient:
     _session: ClientSession
     inexistent_endpoints: List[str]
+    base_url: str
 
-    def __init__(self, *, session: Optional[ClientSession]) -> None:
+    def __init__(self, *, session: Optional[ClientSession], base_url: str) -> None:
         self._session = session or ClientSession()
         self.inexistent_endpoints = []
+        self.base_url = base_url
 
     async def close(self) -> None:
         if self._session is not None:
@@ -22,9 +24,7 @@ class HttpClient:
         if endpoint in self.inexistent_endpoints:
             raise ValueError(f"The id or name for {endpoint} was not found.")
 
-        async with self._session.get(
-            f"https://pokeapi.co/api/v2/{endpoint}"
-        ) as response:
+        async with self._session.get(f"{self.base_url}/{endpoint}") as response:
             if response.status == 404:
                 self.inexistent_endpoints.append(endpoint)
                 raise ValueError(f"The id or name for {endpoint} was not found.")
