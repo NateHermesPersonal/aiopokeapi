@@ -138,12 +138,18 @@ async def read_missing_moves():
         missingMoveDict = {}
         pokemonMoves = {}
         missingMoves = []
+        cutMoves = []
+        cutMovesList = []
         with open("input/missing_moves.txt", "r") as moveFile:
             missingMoves = moveFile.read().splitlines()
+        with open("input/cut_moves.txt", "r") as moveFile:
+            cutMoves = moveFile.read().splitlines()
         tasks = [client.get_move(m) for m in missingMoves]
         results = await asyncio.gather(*tasks)
         uniqueMons = {}
         for result in results:
+            if result.name in cutMoves:
+                cutMovesList.append(f"{result.name} ({result.generation.id})")
             pokemon = []
             for p in result.learned_by_pokemon:
                 if f"{p.name}" in missingMoveDict:
@@ -200,6 +206,7 @@ async def read_missing_moves():
             if pokemon == "mew": # skip mew for now
                 continue
             print(f"{pokemon}: {', '.join(move_list)}")
+        print(f"The following moves are cut from Switch games: {', '.join(cutMovesList)}")
 
             # if len(pokemon) == 0:
             #     print(f"{result.name} - {len(pokemon)} Pokemon with this gen {result.generation.id} move")
