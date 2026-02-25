@@ -191,7 +191,7 @@ async def read_missing_moves():
         multi_move_pokemon = {
             pokemon: sorted(move_list) 
             for pokemon, move_list in pokemon_moves.items() 
-            if len(move_list) > 1
+            # if len(move_list) > 1
         }
 
         # Print the results in a readable format
@@ -208,7 +208,8 @@ async def read_missing_moves():
             if pokemon == "mew": # skip mew for now
                 continue
             print(f"{pokemon}: {', '.join(move_list)}")
-        print(f"The following moves are cut from Switch games: {', '.join(cutMovesList)}")
+        if len(cutMovesList) > 0:
+            print(f"The following moves are cut from Switch games: {', '.join(cutMovesList)}")
         cutMovesDict = {}
         for move in cutMovesList:
             print(f"{move}:{pokemonMoves[move]}")
