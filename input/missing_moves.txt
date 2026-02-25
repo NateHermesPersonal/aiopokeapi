@@ -9,7 +9,6 @@ corrosive-gas
 electrify
 expanding-force
 fiery-dance
-gear-up
 grassy-glide
 heart-swap
 lash-out
@@ -23,7 +22,6 @@ psychic-noise
 raging-bull
 shadow-bone
 shed-tail
-speed-swap
 steel-roller
 syrup-bomb
 tail-slap
@@ -31,5 +29,4 @@ take-heart
 temper-flare
 tidy-up
 triple-axel
-triple-kick
 upper-hand
