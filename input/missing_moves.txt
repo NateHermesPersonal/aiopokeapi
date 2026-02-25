@@ -5,7 +5,6 @@ bolt-beak
 burning-jealousy
 chilly-reception
 coaching
-core-enforcer
 corrosive-gas
 electrify
 expanding-force
@@ -30,7 +29,6 @@ syrup-bomb
 tail-slap
 take-heart
 temper-flare
-thousand-waves
 tidy-up
 triple-axel
 triple-kick
