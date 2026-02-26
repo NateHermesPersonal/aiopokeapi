@@ -185,6 +185,7 @@ async def read_missing_moves():
         # Build a reverse mapping: Pokemon -> list of moves
         pokemon_moves = defaultdict(list)
         for move, pokemon_list in pokemonMoves.items():
+            print(f"{move}: {', '.join(pokemon_list)}") # move then pokemon
             for pokemon in pokemon_list:
                 pokemon_moves[pokemon].append(move)
 
@@ -206,9 +207,10 @@ async def read_missing_moves():
         )
 
         for pokemon, move_list in sorted_pokemon:
-            if pokemon == "mew": # skip mew for now
-                continue
-            print(f"{pokemon}: {', '.join(move_list)}")
+            # if pokemon == "mew": # skip mew for now
+            #     continue
+            # print(f"{pokemon}: {', '.join(move_list)}") # pokemon the moves
+            pass
         if len(cutMovesList) > 0:
             print(f"The following moves are cut from Switch games: {', '.join(cutMovesList)}")
         cutMovesDict = {}
