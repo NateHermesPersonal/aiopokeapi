@@ -15,9 +15,7 @@ lash-out
 meteor-beam
 mist-ball
 misty-explosion
-photon-geyser
 population-bomb
-prismatic-laser
 psychic-noise
 raging-bull
 shadow-bone

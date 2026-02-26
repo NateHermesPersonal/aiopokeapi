@@ -160,7 +160,8 @@ async def read_missing_moves():
                     missingMoveDict[p.name].append(result.name)
                 pokemon.append(p.name)
             # print(f"{result.name} ({result.generation.id})")
-            if int(result.generation.id) < 8: # focus on pre-Switch moves for now
+            # pokemonMoves[f"{result.name} ({result.generation.id})"] = pokemon
+            # if int(result.generation.id) < 8: # focus on pre-Switch moves for now
                 pokemonMoves[f"{result.name} ({result.generation.id})"] = pokemon
             if len(pokemon) == 1:
                 name = pokemon[0]
