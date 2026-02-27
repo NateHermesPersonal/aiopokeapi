@@ -1,7 +1,0 @@
-aura-wheel
-bolt-beak
-corrosive-gas
-electrify
-raging-bull
-shadow-bone
-syrup-bomb
